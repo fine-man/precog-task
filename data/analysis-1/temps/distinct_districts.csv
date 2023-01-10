@@ -1,0 +1,631 @@
+year,state_code,state_name,dist_code,district_name
+2010,29,Telangana,1,Adilabad
+2010,13,Uttar Pradesh,30,Agra
+2010,17,Gujarat,13,Ahmedabad
+2010,1,Maharashtra,26,Ahmednagar
+2010,19,Mizoram,1,Aizawl
+2010,9,Rajasthan,14,Ajmer
+2010,1,Maharashtra,5,Akola
+2010,4,Kerala,6,Alappuzha
+2010,13,Uttar Pradesh,43,Aligarh
+2010,23,Madhya Pradesh,8,Alirajpur
+2010,13,Uttar Pradesh,1,Allahabad
+2010,15,Uttarakhand,7,Almora
+2010,9,Rajasthan,2,Alwar
+2010,14,Haryana,3,Ambala
+2010,13,Uttar Pradesh,15,Ambedkar Nagar
+2010,1,Maharashtra,7,Amravati
+2010,17,Gujarat,17,Amreli
+2010,22,Punjab,8,Amritsar
+2010,17,Gujarat,18,Anand
+2010,2,Andhra Pradesh,2,Ananthapur
+2010,12,Jammu and Kashmir,4,Anantnag
+2010,11,Orissa,27,Anugul
+2010,23,Madhya Pradesh,22,Anuppur
+2010,8,Bihar,24,Araria
+2010,17,Gujarat,38,Aravalli at Modasa
+2010,10,Tamil Nadu,30,Ariyalur
+2010,23,Madhya Pradesh,48,Ashoknagr
+2010,13,Uttar Pradesh,17,Auraiya
+2010,8,Bihar,16,Aurangabad
+2010,1,Maharashtra,19,Aurangabad
+2010,13,Uttar Pradesh,44,Azamgarh
+2010,3,Karnataka,2,BAGALKOT
+2010,3,Karnataka,12,BALLARI
+2010,3,Karnataka,1,BELAGAVI
+2010,3,Karnataka,20,BENGALURU
+2010,3,Karnataka,21,BENGALURU RURAL
+2010,3,Karnataka,5,BIDAR
+2010,17,Gujarat,43,BOTAD
+2010,15,Uttarakhand,14,Bageshwar
+2010,13,Uttar Pradesh,45,Baghpat
+2010,13,Uttar Pradesh,7,Bahraich
+2010,6,Assam,27,Baksa
+2010,23,Madhya Pradesh,26,Balaghat
+2010,11,Orissa,17,Balangir
+2010,11,Orissa,5,Balasore
+2010,13,Uttar Pradesh,21,Ballia
+2010,18,Chhattisgarh,19,Balod
+2010,18,Chhattisgarh,23,Balodabazar
+2010,9,Rajasthan,27,Balotra Barmer
+2010,13,Uttar Pradesh,67,Balrampur
+2010,18,Chhattisgarh,25,Balrampur Ramanujganj
+2010,17,Gujarat,19,Banaskanth at Palanpur
+2010,13,Uttar Pradesh,39,Banda
+2010,12,Jammu and Kashmir,18,Bandipora
+2010,8,Bihar,7,Banka
+2010,16,West Bengal,19,Bankura
+2010,9,Rajasthan,25,Banswara
+2010,13,Uttar Pradesh,36,Barabanki
+2010,12,Jammu and Kashmir,3,Baramulla
+2010,9,Rajasthan,12,Baran
+2010,13,Uttar Pradesh,2,Bareilly
+2010,11,Orissa,29,Bargarh
+2010,22,Punjab,16,Barnala
+2010,6,Assam,20,Barpeta
+2010,23,Madhya Pradesh,18,Barwani
+2010,18,Chhattisgarh,15,Bastar
+2010,13,Uttar Pradesh,46,Basti
+2010,22,Punjab,17,Bathinda
+2010,1,Maharashtra,27,Beed
+2010,8,Bihar,6,Begusarai
+2010,18,Chhattisgarh,20,Bemetara
+2010,8,Bihar,28,Bettiah
+2010,23,Madhya Pradesh,37,Betul
+2010,13,Uttar Pradesh,22,Bhadohi SR Nagar
+2010,11,Orissa,18,Bhadrak
+2010,8,Bihar,34,Bhagalpur
+2010,1,Maharashtra,10,Bhandara
+2010,9,Rajasthan,13,Bharatpur
+2010,17,Gujarat,20,Bharuch
+2010,17,Gujarat,21,Bhavnagar
+2010,9,Rajasthan,31,Bhilwara
+2010,23,Madhya Pradesh,29,Bhind
+2010,14,Haryana,4,Bhiwani
+2010,8,Bihar,33,Bhojpur
+2010,23,Madhya Pradesh,50,Bhopal
+2010,13,Uttar Pradesh,47,Bijnor
+2010,9,Rajasthan,6,Bikaner
+2010,18,Chhattisgarh,2,Bilaspur
+2010,5,Himachal Pradesh,7,Bilaspur
+2010,16,West Bengal,8,Birbhum
+2010,25,Manipur,3,Bishnupur
+2010,7,Jharkhand,1,Bokaro
+2010,6,Assam,9,Bongaigaon
+2010,11,Orissa,24,Boudh
+2010,13,Uttar Pradesh,18,Budaun
+2010,12,Jammu and Kashmir,8,Budgam
+2010,13,Uttar Pradesh,48,Bulandshahr
+2010,1,Maharashtra,4,Buldhana
+2010,9,Rajasthan,10,Bundi
+2010,23,Madhya Pradesh,49,Burhanpur
+2010,8,Bihar,26,Buxar
+2010,3,Karnataka,27,CHAMRAJNAGAR
+2010,3,Karnataka,29,CHIKKABALLAPUR
+2010,3,Karnataka,17,CHIKKAMAGALURU
+2010,3,Karnataka,13,CHITRADURGA
+2010,6,Assam,13,Cachar
+2010,16,West Bengal,3,Calcutta
+2010,26,Delhi,8,Central
+2010,5,Himachal Pradesh,8,Chamba
+2010,15,Uttarakhand,8,Chamoli
+2010,15,Uttarakhand,13,Champawat
+2010,13,Uttar Pradesh,75,Chandauli
+2014,25,Manipur,8,Chandel
+2010,27,Chandigarh,1,Chandigarh
+2010,1,Maharashtra,13,Chandrapur
+2010,7,Jharkhand,13,Chatra
+2010,10,Tamil Nadu,13,Chennai
+2010,23,Madhya Pradesh,39,Chhatarpur
+2010,23,Madhya Pradesh,20,Chhindwara
+2010,17,Gujarat,41,Chhota Udepur
+2010,6,Assam,25,Chirang
+2010,13,Uttar Pradesh,5,Chitrakoot
+2010,2,Andhra Pradesh,3,Chittoor
+2010,9,Rajasthan,30,Chittorgarh
+2010,25,Manipur,6,Churachandpur
+2010,9,Rajasthan,33,Churu
+2010,10,Tamil Nadu,18,Coimbatore
+2010,16,West Bengal,6,Coochbehar
+2010,10,Tamil Nadu,20,Cuddalore
+2010,11,Orissa,1,Cuttack
+2010,3,Karnataka,24,DAKSHINA KANNADA
+2010,3,Karnataka,14,DAVANGERE
+2010,3,Karnataka,9,DHARWAD
+2010,17,Gujarat,22,Dahod
+2010,7,Jharkhand,17,Daltonganj
+2010,31,Diu and Daman,2,Daman
+2010,23,Madhya Pradesh,27,Damoh
+2010,18,Chhattisgarh,17,Dantewada
+2010,8,Bihar,17,Darbhanga
+2010,16,West Bengal,17,Darjeeling
+2010,6,Assam,8,Darrang
+2010,23,Madhya Pradesh,13,Datia
+2010,9,Rajasthan,3,Dausa
+2010,15,Uttarakhand,5,Dehradun
+2010,11,Orissa,30,Deogarh
+2010,7,Jharkhand,16,Deoghar
+2010,13,Uttar Pradesh,41,Deoria
+2010,17,Gujarat,40,Devbhumi Dwarka at Khambhaliya
+2010,23,Madhya Pradesh,40,Dewas
+2010,20,Tripura,11,Dhalai Tripura
+2010,18,Chhattisgarh,5,Dhamtari
+2010,7,Jharkhand,9,Dhanbad
+2010,23,Madhya Pradesh,38,Dhar
+2010,10,Tamil Nadu,1,Dharmapuri
+2010,6,Assam,17,Dhemaji
+2010,11,Orissa,7,Dhenkanal
+2010,9,Rajasthan,34,Dholpur
+2010,6,Assam,16,Dhubri
+2010,1,Maharashtra,2,Dhule
+2010,6,Assam,7,Dibrugarh
+2010,6,Assam,28,Dima Hasao
+2010,10,Tamil Nadu,27,Dindigul
+2010,23,Madhya Pradesh,6,Dindori
+2010,31,Diu and Daman,1,Diu
+2010,12,Jammu and Kashmir,15,Doda
+2010,7,Jharkhand,2,Dumka
+2010,9,Rajasthan,24,Dungarpur
+2010,18,Chhattisgarh,7,Durg
+2010,26,Delhi,3,East
+2010,21,Meghalaya,4,East Garo Hills
+2010,2,Andhra Pradesh,4,East Godavari
+2010,21,Meghalaya,1,East Khasi Hills
+2010,7,Jharkhand,11,East Singhbhum at Jamshedpur
+2010,4,Kerala,2,Ernakulam
+2010,10,Tamil Nadu,24,Erode
+2010,13,Uttar Pradesh,25,Etah
+2010,13,Uttar Pradesh,33,Etawah
+2010,13,Uttar Pradesh,49,Faizabad
+2010,14,Haryana,5,Faridabad
+2010,22,Punjab,9,Faridkot
+2010,13,Uttar Pradesh,63,Farrukhabad
+2010,14,Haryana,15,Fatehabad
+2010,22,Punjab,4,Fatehgarh Sahib
+2010,13,Uttar Pradesh,9,Fatehpur
+2010,22,Punjab,26,Fazilka
+2010,22,Punjab,6,Ferozepur
+2010,13,Uttar Pradesh,29,Firozabad
+2010,3,Karnataka,8,GADAG
+2010,17,Gujarat,11,GANDHINAGAR
+2010,1,Maharashtra,12,Gadchiroli
+2010,11,Orissa,9,Gajapati
+2010,12,Jammu and Kashmir,7,Ganderbal
+2010,9,Rajasthan,7,Ganganagar
+2010,24,Sikkim,4,Gangtok
+2010,11,Orissa,4,Ganjam
+2010,7,Jharkhand,20,Garhwa
+2010,13,Uttar Pradesh,20,Gautam Buddha Nagar
+2010,8,Bihar,35,Gaya
+2010,13,Uttar Pradesh,8,Ghaziabad
+2010,13,Uttar Pradesh,28,Ghazipur
+2010,17,Gujarat,37,Gir Somnath at Veraval
+2010,7,Jharkhand,10,Giridih
+2010,6,Assam,18,Goalpara
+2010,7,Jharkhand,6,Godda
+2010,6,Assam,19,Golaghat
+2010,20,Tripura,6,Gomati District
+2010,13,Uttar Pradesh,50,Gonda
+2010,1,Maharashtra,11,Gondia
+2010,8,Bihar,23,Gopalganj
+2010,13,Uttar Pradesh,3,Gorakhpur
+2010,7,Jharkhand,5,Gumla
+2010,23,Madhya Pradesh,30,Guna
+2010,2,Andhra Pradesh,5,Guntur
+2010,22,Punjab,10,Gurdaspur
+2010,14,Haryana,6,Gurugram
+2010,23,Madhya Pradesh,44,Gwalior
+2011,24,Sikkim,3,Gyalshing
+2010,3,Karnataka,23,HASSAN
+2010,3,Karnataka,11,HAVERI
+2010,6,Assam,21,Hailakandi
+2010,5,Himachal Pradesh,1,Hamirpur
+2010,13,Uttar Pradesh,64,Hamirpur
+2010,9,Rajasthan,11,Hanumangarh
+2010,13,Uttar Pradesh,73,Hapur
+2010,23,Madhya Pradesh,4,Harda
+2010,13,Uttar Pradesh,4,Hardoi
+2010,15,Uttarakhand,9,Haridwar
+2010,13,Uttar Pradesh,65,Hathras
+2010,7,Jharkhand,7,Hazaribagh
+2010,14,Haryana,7,Hisar
+2010,16,West Bengal,2,Hooghly
+2010,23,Madhya Pradesh,3,Hoshangabad
+2010,22,Punjab,18,Hoshiarpurr
+2010,16,West Bengal,11,Howrah
+2010,29,Telangana,2,Hyderabad
+2010,4,Kerala,7,Idukki
+2010,25,Manipur,1,Imphal East
+2010,25,Manipur,2,Imphal West
+2010,23,Madhya Pradesh,47,Indore
+2010,23,Madhya Pradesh,1,Jabalpur
+2010,11,Orissa,14,Jagatsinghpur
+2010,9,Rajasthan,38,Jaipur District
+2010,9,Rajasthan,4,Jaipur Metro
+2010,9,Rajasthan,40,Jaipur Metro II
+2010,9,Rajasthan,32,Jaiselmer
+2010,11,Orissa,19,Jajpur
+2010,22,Punjab,2,Jalandhar
+2010,13,Uttar Pradesh,70,Jalaun
+2010,1,Maharashtra,3,Jalgaon
+2010,1,Maharashtra,18,Jalna
+2010,9,Rajasthan,21,Jalore
+2010,16,West Bengal,4,Jalpaiguri
+2010,12,Jammu and Kashmir,19,Jammu
+2010,17,Gujarat,23,Jamnagar
+2010,7,Jharkhand,12,Jamtara
+2010,8,Bihar,15,Jamui
+2010,18,Chhattisgarh,18,Janjgir
+2010,18,Chhattisgarh,16,Jashpur
+2010,13,Uttar Pradesh,12,Jaunpur
+2010,8,Bihar,36,Jehanabad
+2010,23,Madhya Pradesh,9,Jhabua
+2010,14,Haryana,8,Jhajjar
+2010,9,Rajasthan,22,Jhalawar
+2010,13,Uttar Pradesh,66,Jhansi
+2010,16,West Bengal,25,Jhargram
+2010,11,Orissa,12,Jharsuguda
+2010,9,Rajasthan,18,Jhunjhunu
+2010,14,Haryana,9,Jind
+2010,9,Rajasthan,39,Jodhpur District
+2010,9,Rajasthan,28,Jodhpur Metro
+2010,6,Assam,11,Jorhat
+2010,17,Gujarat,24,Junagadh
+2010,13,Uttar Pradesh,35,Jyotiba Phule Nagar
+2010,3,Karnataka,4,KALABURAGI
+2010,7,Jharkhand,24,KHUNTI
+2010,3,Karnataka,25,KODAGU
+2010,3,Karnataka,19,KOLAR
+2010,3,Karnataka,7,KOPPAL
+2010,2,Andhra Pradesh,7,Kadapa
+2010,8,Bihar,2,Kaimur at Bhabhua
+2010,14,Haryana,16,Kaithal
+2010,11,Orissa,10,Kalahandi
+2010,6,Assam,23,Kamrup
+2010,6,Assam,1,Kamrup Metro
+2010,10,Tamil Nadu,31,Kancheepuram
+2010,11,Orissa,23,Kandhamal
+2010,5,Himachal Pradesh,2,Kangra
+2010,18,Chhattisgarh,13,Kanker
+2010,13,Uttar Pradesh,69,Kannauj
+2010,10,Tamil Nadu,7,Kanniyakumari
+2010,4,Kerala,3,Kannur
+2010,13,Uttar Pradesh,51,Kanpur Dehat
+2010,13,Uttar Pradesh,19,Kanpur Nagar
+2010,13,Uttar Pradesh,40,Kanshi Ram Nagar
+2010,22,Punjab,11,Kapurthala
+2010,9,Rajasthan,29,Karauli
+2010,6,Assam,26,Karbi Anglong
+2010,12,Jammu and Kashmir,17,Kargil
+2010,6,Assam,12,Karimganj
+2010,29,Telangana,3,Karimnagar
+2010,14,Haryana,1,Karnal
+2010,10,Tamil Nadu,19,Karur
+2010,4,Kerala,1,Kasaragod
+2010,12,Jammu and Kashmir,1,Kathua
+2010,8,Bihar,5,Katihar
+2010,23,Madhya Pradesh,34,Katni
+2010,13,Uttar Pradesh,37,Kaushambi
+2010,18,Chhattisgarh,9,Kawardha
+2010,11,Orissa,2,Kendrapada
+2010,11,Orissa,13,Keonjhar
+2010,8,Bihar,14,Khagaria
+2010,29,Telangana,4,Khammam
+2010,23,Madhya Pradesh,10,Khandwa
+2010,17,Gujarat,25,Kheda at Nadiad
+2010,20,Tripura,10,Khowai Tripura
+2010,11,Orissa,8,Khurda
+2010,5,Himachal Pradesh,9,Kinnaur
+2010,8,Bihar,25,Kishanganj
+2010,12,Jammu and Kashmir,22,Kishtwar
+2010,7,Jharkhand,3,Koderma
+2010,6,Assam,22,Kokrajhar
+2010,1,Maharashtra,34,Kolhapur
+2010,4,Kerala,15,Kollam
+2010,18,Chhattisgarh,22,Kondagaon
+2010,11,Orissa,6,Koraput
+2010,18,Chhattisgarh,1,Korba
+2010,18,Chhattisgarh,11,Koriya
+2010,9,Rajasthan,20,Kota
+2010,4,Kerala,10,Kottayam
+2010,4,Kerala,5,Kozhikode
+2010,2,Andhra Pradesh,11,Krishna
+2010,10,Tamil Nadu,26,Krishnagiri
+2010,12,Jammu and Kashmir,20,Kulgam
+2010,5,Himachal Pradesh,10,Kullu
+2010,12,Jammu and Kashmir,11,Kupwara
+2010,2,Andhra Pradesh,10,Kurnool
+2010,14,Haryana,10,Kurukshetra
+2010,13,Uttar Pradesh,34,Kushinagar
+2010,6,Assam,5,Lakhimpur
+2010,13,Uttar Pradesh,10,Lakhimpur
+2010,8,Bihar,19,Lakhisarai
+2010,4,Kerala,13,Lakshadweep
+2010,13,Uttar Pradesh,23,Lalitpur
+2010,7,Jharkhand,19,Latehar
+2010,1,Maharashtra,28,Latur
+2011,12,Jammu and Kashmir,16,Leh
+2010,7,Jharkhand,8,Lohardaga
+2010,13,Uttar Pradesh,24,Lucknow
+2010,22,Punjab,1,Ludhiana
+2010,19,Mizoram,2,Lunglei
+2010,3,Karnataka,22,MANDYA
+2010,17,Gujarat,39,MORBI
+2010,3,Karnataka,26,MYSURU
+2010,8,Bihar,12,Madhepura
+2010,8,Bihar,18,Madhubani
+2010,10,Tamil Nadu,15,Madurai
+2010,1,Maharashtra,41,Mah State Cooperative Appellat
+2010,29,Telangana,5,Mahabubnagar
+2010,13,Uttar Pradesh,52,Maharajganj
+2010,1,Maharashtra,40,Maharashtra Industrial and Lab
+2010,1,Maharashtra,42,Maharashtra-Family Courts
+2010,1,Maharashtra,43,Maharashtra-School Tribunals
+2010,18,Chhattisgarh,12,Mahasamund
+2010,17,Gujarat,15,Mahesana
+2010,17,Gujarat,42,Mahisagar at Lunawada
+2010,13,Uttar Pradesh,38,Mahoba
+2010,13,Uttar Pradesh,14,Mainpuri
+2010,4,Kerala,11,Malappuram
+2010,16,West Bengal,1,Malda
+2010,11,Orissa,31,Malkangiri
+2010,5,Himachal Pradesh,6,Mandi
+2010,23,Madhya Pradesh,41,Mandla
+2010,23,Madhya Pradesh,16,Mandleshwar
+2010,23,Madhya Pradesh,35,Mandsaur
+2010,24,Sikkim,2,Mangan
+2010,22,Punjab,13,Mansa
+2010,13,Uttar Pradesh,53,Mathura
+2010,13,Uttar Pradesh,42,Mau
+2010,11,Orissa,26,Mayurbhanj
+2010,29,Telangana,6,Medak
+2010,13,Uttar Pradesh,6,Meerut
+2010,9,Rajasthan,8,Merta (Nagaur)
+2010,13,Uttar Pradesh,68,Mirzapur
+2010,22,Punjab,12,Moga
+2010,22,Punjab,24,Mohali
+2010,13,Uttar Pradesh,54,Moradabad
+2010,23,Madhya Pradesh,15,Morena
+2010,6,Assam,4,Morigaon
+2010,8,Bihar,10,Motihari
+2010,1,Maharashtra,23,Mumbai CMM Courts
+2010,1,Maharashtra,37,Mumbai City Civil Court
+2010,1,Maharashtra,39,Mumbai Motor Accident Claims T
+2010,1,Maharashtra,38,Mumbai Small Causes Court
+2010,18,Chhattisgarh,24,Mungeli
+2010,8,Bihar,11,Munger
+2010,16,West Bengal,12,Murshidabad
+2010,13,Uttar Pradesh,26,Muzaffarnagar
+2010,8,Bihar,38,Muzaffarpur
+2010,11,Orissa,32,Nabarangpur
+2010,16,West Bengal,22,Nadia
+2010,6,Assam,10,Nagaon
+2010,10,Tamil Nadu,6,Nagapattinam
+2010,1,Maharashtra,9,Nagpur
+2010,15,Uttarakhand,1,Nainital
+2010,8,Bihar,30,Nalanda
+2010,6,Assam,15,Nalbari
+2010,29,Telangana,7,Nalgonda
+2010,10,Tamil Nadu,5,Namakkal
+2010,24,Sikkim,1,Namchi
+2010,1,Maharashtra,15,Nanded
+2010,1,Maharashtra,1,Nandurbar
+2010,17,Gujarat,33,Narmada
+2010,14,Haryana,11,Narnaul
+2010,23,Madhya Pradesh,2,Narsinghpur
+2010,1,Maharashtra,20,Nashik
+2010,17,Gujarat,32,Navsari
+2010,8,Bihar,27,Nawada
+2010,11,Orissa,22,Nayagarh
+2010,23,Madhya Pradesh,17,Neemuch
+2010,2,Andhra Pradesh,15,Nellore
+2010,26,Delhi,7,New Delhi
+2010,29,Telangana,8,Nizamabad
+2010,26,Delhi,4,North
+2010,16,West Bengal,14,North  Twenty Four Parganas
+2010,16,West Bengal,21,North Dinajpur
+2010,26,Delhi,1,North East
+2010,30,Goa,1,North Goa
+2010,20,Tripura,2,North Tripura
+2010,26,Delhi,5,North West
+2010,11,Orissa,3,Nuapada
+2010,14,Haryana,19,Nuh
+2010,1,Maharashtra,29,Osmanabad
+2010,7,Jharkhand,14,Pakur
+2010,4,Kerala,8,Palakkad
+2010,9,Rajasthan,19,Pali
+2010,14,Haryana,23,Palwal
+2010,14,Haryana,14,Panchkula
+2010,17,Gujarat,27,Panchmahal at Godhra
+2010,14,Haryana,18,Panipat
+2010,23,Madhya Pradesh,7,Panna
+2010,1,Maharashtra,17,Parbhani
+2010,16,West Bengal,24,Paschim Bardhaman
+2010,16,West Bengal,7,Paschim Medinpur
+2010,17,Gujarat,28,Patan
+2010,4,Kerala,12,Pathanamthitta
+2010,22,Punjab,21,Pathankot
+2010,22,Punjab,5,Patiala
+2010,8,Bihar,1,Patna
+2010,15,Uttarakhand,2,Pauri Garhwal
+2010,10,Tamil Nadu,23,Perambalur
+2010,13,Uttar Pradesh,13,Pilibhit
+2010,15,Uttarakhand,15,Pithoragarh
+2010,12,Jammu and Kashmir,12,Poonch
+2010,17,Gujarat,36,Porbandar
+2010,2,Andhra Pradesh,17,Prakasham
+2010,9,Rajasthan,23,Pratapgarh
+2010,13,Uttar Pradesh,31,Pratapgarh
+2010,10,Tamil Nadu,28,Puducherry
+2010,10,Tamil Nadu,2,Pudukkottai
+2010,12,Jammu and Kashmir,6,Pulwama
+2010,1,Maharashtra,25,Pune
+2010,16,West Bengal,18,Purba Bardhaman
+2010,16,West Bengal,9,Purba Medinipur
+2010,11,Orissa,15,Puri
+2010,8,Bihar,9,Purnea
+2010,16,West Bengal,10,Purulia
+2010,3,Karnataka,6,RAICHUR
+2010,17,Gujarat,16,RAJKOT
+2010,3,Karnataka,28,RAMANAGARAM
+2010,7,Jharkhand,23,RAMGARH
+2010,13,Uttar Pradesh,55,Raebareli
+2010,1,Maharashtra,24,Raigad
+2010,18,Chhattisgarh,6,Raigarh
+2010,18,Chhattisgarh,3,Raipur
+2010,23,Madhya Pradesh,24,Raisen
+2010,23,Madhya Pradesh,14,Rajgarh
+2010,18,Chhattisgarh,10,Rajnandgaon
+2010,12,Jammu and Kashmir,13,Rajouri
+2010,9,Rajasthan,1,Rajsamand
+2010,10,Tamil Nadu,21,Ramanathapuram
+2010,12,Jammu and Kashmir,14,Ramban
+2010,13,Uttar Pradesh,56,Rampur
+2010,7,Jharkhand,22,Ranchi
+2010,29,Telangana,9,Rangareddy
+2010,23,Madhya Pradesh,42,Ratlam
+2010,1,Maharashtra,32,Ratnagiri
+2010,11,Orissa,21,Rayagada
+2010,12,Jammu and Kashmir,9,Reasi
+2010,23,Madhya Pradesh,46,Rewa
+2010,14,Haryana,17,Rewari
+2010,21,Meghalaya,5,Ri Bhoi
+2010,14,Haryana,12,Rohtak
+2010,8,Bihar,13,Rohtas Sasaram
+2011,15,Uttarakhand,16,Rudraprayag
+2010,22,Punjab,3,Rupnagar
+2010,22,Punjab,15,SBS Nagar
+2010,3,Karnataka,15,SHIVAMOGGA
+2010,17,Gujarat,14,SURAT
+2010,17,Gujarat,29,Sabarkantha at Himmatnagar
+2010,23,Madhya Pradesh,43,Sagar
+2010,13,Uttar Pradesh,57,Saharanpur
+2010,8,Bihar,21,Saharsa
+2010,7,Jharkhand,21,Sahibganj
+2010,10,Tamil Nadu,12,Salem
+2010,8,Bihar,3,Samastipur
+2010,12,Jammu and Kashmir,21,Samba
+2010,11,Orissa,11,Sambalpur
+2010,13,Uttar Pradesh,74,Sambhal at Chandausi
+2010,1,Maharashtra,35,Sangli
+2010,22,Punjab,19,Sangrur
+2010,13,Uttar Pradesh,71,Santkabir Nagar
+2010,8,Bihar,4,Saran at Chapra
+2010,1,Maharashtra,31,Satara
+2010,23,Madhya Pradesh,32,Satna
+2010,9,Rajasthan,36,Sawai Madhopur
+2010,23,Madhya Pradesh,25,Sehore
+2010,25,Manipur,5,Senapati
+2010,23,Madhya Pradesh,33,Seoni
+2010,20,Tripura,9,Sepahijala Tripura
+2010,7,Jharkhand,15,Seraikella
+2010,26,Delhi,2,Shahdara
+2010,23,Madhya Pradesh,11,Shahdol
+2010,13,Uttar Pradesh,58,Shahjahanpur
+2010,23,Madhya Pradesh,19,Shajapur
+2010,13,Uttar Pradesh,76,Shamli
+2010,8,Bihar,20,Sheikhpura
+2010,8,Bihar,37,Sheohar
+2010,23,Madhya Pradesh,12,Sheopur
+2010,5,Himachal Pradesh,11,Shimla
+2010,23,Madhya Pradesh,23,Shivpuri
+2010,12,Jammu and Kashmir,10,Shopian
+2010,13,Uttar Pradesh,11,Shravasti
+2010,13,Uttar Pradesh,59,Siddharthnagar
+2010,23,Madhya Pradesh,21,Sidhi
+2010,9,Rajasthan,35,Sikar
+2010,32,DNH at Silvasa,1,Silvassa
+2010,7,Jharkhand,18,Simdega
+2010,1,Maharashtra,33,Sindhudurg
+2010,23,Madhya Pradesh,31,Singrauli
+2010,5,Himachal Pradesh,3,Sirmaur
+2010,9,Rajasthan,26,Sirohi
+2010,14,Haryana,2,Sirsa
+2010,8,Bihar,31,Sitamarhi
+2010,13,Uttar Pradesh,16,Sitapur
+2010,10,Tamil Nadu,29,Sivagangai
+2010,6,Assam,3,Sivasagar
+2010,8,Bihar,29,Siwan
+2010,5,Himachal Pradesh,5,Solan
+2010,1,Maharashtra,30,Solapur
+2010,13,Uttar Pradesh,60,Sonbhadra
+2010,14,Haryana,13,Sonepat
+2010,11,Orissa,20,Sonepur
+2010,6,Assam,6,Sonitpur
+2010,26,Delhi,10,South
+2010,16,West Bengal,13,South Dinajpur
+2010,26,Delhi,11,South East
+2010,30,Goa,2,South Goa
+2010,16,West Bengal,20,South Twenty Four Parganas
+2010,26,Delhi,6,South West
+2010,20,Tripura,3,SouthTripura
+2010,22,Punjab,14,Sri Muktsar Sahib
+2010,2,Andhra Pradesh,19,Srikakulam
+2010,12,Jammu and Kashmir,5,Srinagar
+2010,13,Uttar Pradesh,61,Sultanpur
+2010,11,Orissa,16,Sundargarh
+2010,8,Bihar,22,Supaul
+2010,18,Chhattisgarh,21,Surajpur
+2010,17,Gujarat,30,Surendranagar
+2010,18,Chhattisgarh,4,Surguja
+2010,3,Karnataka,18,TUMAKURU
+2010,25,Manipur,9,Tamenglong
+2010,17,Gujarat,34,Tapi
+2010,22,Punjab,23,Tarn Taran
+2010,15,Uttarakhand,3,Tehri Garhwal
+2010,1,Maharashtra,21,Thane
+2010,10,Tamil Nadu,17,Thanjavur
+2010,10,Tamil Nadu,16,The Nilgiris
+2010,10,Tamil Nadu,4,Theni
+2010,4,Kerala,9,Thiruvananthapuram
+2010,10,Tamil Nadu,9,Thoothukudi
+2010,25,Manipur,4,Thoubal
+2010,4,Kerala,4,Thrissur
+2010,23,Madhya Pradesh,36,Tikamgarh
+2010,6,Assam,2,Tinsukia
+2010,10,Tamil Nadu,8,Tiruchirappalli
+2010,10,Tamil Nadu,3,Tirunelveli
+2010,10,Tamil Nadu,33,Tiruppur
+2010,10,Tamil Nadu,32,Tiruvallur
+2010,10,Tamil Nadu,22,Tiruvannamalai
+2010,10,Tamil Nadu,25,Tiruvarur
+2010,9,Rajasthan,5,Tonk
+2010,3,Karnataka,16,UDUPI
+2010,3,Karnataka,10,UTTARA KANNADA
+2010,9,Rajasthan,9,Udaipur
+2010,6,Assam,24,Udalguri
+2010,15,Uttarakhand,4,Udham Singh Nagar
+2010,12,Jammu and Kashmir,2,Udhampur
+2010,23,Madhya Pradesh,45,Ujjain
+2010,23,Madhya Pradesh,5,Umaria
+2010,5,Himachal Pradesh,4,Una
+2010,20,Tripura,5,Unakoti  Tripura
+2010,13,Uttar Pradesh,62,Unnao
+2010,15,Uttarakhand,6,Uttarkashi
+2010,3,Karnataka,3,VIJAYAPURA
+2010,17,Gujarat,31,Vadodara
+2010,8,Bihar,39,Vaishali
+2010,17,Gujarat,35,Valsad
+2010,13,Uttar Pradesh,27,Varanasi
+2010,10,Tamil Nadu,11,Vellore
+2010,23,Madhya Pradesh,28,Vidisha
+2010,10,Tamil Nadu,10,Viluppuram
+2010,10,Tamil Nadu,14,Virudhunagar
+2010,2,Andhra Pradesh,20,Visakapatnam
+2010,2,Andhra Pradesh,21,Vizianagaram
+2010,29,Telangana,10,Warangal
+2010,1,Maharashtra,8,Wardha
+2010,1,Maharashtra,36,Washim
+2010,4,Kerala,16,Wayanad
+2010,26,Delhi,9,West
+2010,21,Meghalaya,2,West Garo Hills
+2010,2,Andhra Pradesh,23,West Godavari
+2010,21,Meghalaya,3,West Jaintia Hills
+2014,21,Meghalaya,7,West Khasi Hills
+2010,7,Jharkhand,4,West Singhbhum at Chaibasa
+2010,20,Tripura,1,West Tripura
+2010,3,Karnataka,30,YADGIR.
+2010,14,Haryana,20,Yamunanagar
+2010,1,Maharashtra,14,Yavatmal
+2010,17,Gujarat,26,kachchh at Bhuj
+2010,16,West Bengal,23,kalimpong

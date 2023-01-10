@@ -1,0 +1,636 @@
+state_code,dist_code,year,state_name,district_name,total_cases
+1,1,2018,Maharashtra,Nandurbar,5046
+1,2,2018,Maharashtra,Dhule,8268
+1,3,2018,Maharashtra,Jalgaon,25610
+1,4,2018,Maharashtra,Buldhana,11335
+1,5,2018,Maharashtra,Akola,11802
+1,7,2018,Maharashtra,Amravati,16770
+1,8,2018,Maharashtra,Wardha,8802
+1,9,2018,Maharashtra,Nagpur,48484
+1,10,2018,Maharashtra,Bhandara,6964
+1,11,2018,Maharashtra,Gondia,4861
+1,12,2018,Maharashtra,Gadchiroli,4476
+1,13,2018,Maharashtra,Chandrapur,14114
+1,14,2018,Maharashtra,Yavatmal,17988
+1,15,2018,Maharashtra,Nanded,14300
+1,17,2018,Maharashtra,Parbhani,10029
+1,18,2018,Maharashtra,Jalna,6782
+1,19,2018,Maharashtra,Aurangabad,25417
+1,20,2018,Maharashtra,Nashik,22972
+1,21,2018,Maharashtra,Thane,28525
+1,23,2018,Maharashtra,Mumbai CMM Courts,60769
+1,24,2018,Maharashtra,Raigad,13803
+1,25,2018,Maharashtra,Pune,36143
+1,26,2018,Maharashtra,Ahmednagar,24294
+1,27,2018,Maharashtra,Beed,18346
+1,28,2018,Maharashtra,Latur,12717
+1,29,2018,Maharashtra,Osmanabad,11328
+1,30,2018,Maharashtra,Solapur,24143
+1,31,2018,Maharashtra,Satara,33788
+1,32,2018,Maharashtra,Ratnagiri,5430
+1,33,2018,Maharashtra,Sindhudurg,3257
+1,34,2018,Maharashtra,Kolhapur,12681
+1,35,2018,Maharashtra,Sangli,15916
+1,36,2018,Maharashtra,Washim,5325
+1,37,2018,Maharashtra,Mumbai City Civil Court,24461
+1,38,2018,Maharashtra,Mumbai Small Causes Court,1429
+1,39,2018,Maharashtra,Mumbai Motor Accident Claims T,791
+1,40,2018,Maharashtra,Maharashtra Industrial and Lab,5537
+1,41,2018,Maharashtra,Mah State Cooperative Appellat,2798
+1,42,2018,Maharashtra,Maharashtra-Family Courts,8086
+1,43,2018,Maharashtra,Maharashtra-School Tribunals,67
+2,2,2018,Andhra Pradesh,Ananthapur,9039
+2,3,2018,Andhra Pradesh,Chittoor,7679
+2,4,2018,Andhra Pradesh,East Godavari,15235
+2,5,2018,Andhra Pradesh,Guntur,12087
+2,7,2018,Andhra Pradesh,Kadapa,11241
+2,10,2018,Andhra Pradesh,Kurnool,8391
+2,11,2018,Andhra Pradesh,Krishna,20344
+2,15,2018,Andhra Pradesh,Nellore,5440
+2,17,2018,Andhra Pradesh,Prakasham,8263
+2,19,2018,Andhra Pradesh,Srikakulam,6397
+2,20,2018,Andhra Pradesh,Visakapatnam,19860
+2,21,2018,Andhra Pradesh,Vizianagaram,4914
+2,23,2018,Andhra Pradesh,West Godavari,10056
+3,1,2018,Karnataka,BELAGAVI,46526
+3,2,2018,Karnataka,BAGALKOT,12496
+3,3,2018,Karnataka,VIJAYAPURA,15341
+3,4,2018,Karnataka,KALABURAGI,16417
+3,5,2018,Karnataka,BIDAR,18242
+3,6,2018,Karnataka,RAICHUR,12806
+3,7,2018,Karnataka,KOPPAL,9256
+3,8,2018,Karnataka,GADAG,9670
+3,9,2018,Karnataka,DHARWAD,25634
+3,10,2018,Karnataka,UTTARA KANNADA,12124
+3,11,2018,Karnataka,HAVERI,11007
+3,12,2018,Karnataka,BALLARI,29920
+3,13,2018,Karnataka,CHITRADURGA,15946
+3,14,2018,Karnataka,DAVANGERE,18421
+3,15,2018,Karnataka,SHIVAMOGGA,19670
+3,16,2018,Karnataka,UDUPI,14086
+3,17,2018,Karnataka,CHIKKAMAGALURU,12521
+3,18,2018,Karnataka,TUMAKURU,28049
+3,19,2018,Karnataka,KOLAR,12126
+3,20,2018,Karnataka,BENGALURU,151244
+3,21,2018,Karnataka,BENGALURU RURAL,28811
+3,22,2018,Karnataka,MANDYA,17212
+3,23,2018,Karnataka,HASSAN,21650
+3,24,2018,Karnataka,DAKSHINA KANNADA,35200
+3,25,2018,Karnataka,KODAGU,7594
+3,26,2018,Karnataka,MYSURU,30769
+3,27,2018,Karnataka,CHAMRAJNAGAR,7966
+3,28,2018,Karnataka,RAMANAGARAM,6567
+3,29,2018,Karnataka,CHIKKABALLAPUR,11145
+3,30,2018,Karnataka,YADGIR.,4680
+3,30,2018,Karnataka,YADGIR,1284
+4,1,2018,Kerala,Kasaragod,9826
+4,2,2018,Kerala,Ernakulam,43503
+4,3,2018,Kerala,Kannur,32825
+4,4,2018,Kerala,Thrissur,35951
+4,5,2018,Kerala,Kozhikode,27243
+4,6,2018,Kerala,Alappuzha,49178
+4,7,2018,Kerala,Idukki,11758
+4,8,2018,Kerala,Palakkad,22172
+4,9,2018,Kerala,Thiruvananthapuram,39225
+4,10,2018,Kerala,Kottayam,43849
+4,11,2018,Kerala,Malappuram,16885
+4,12,2018,Kerala,Pathanamthitta,15671
+4,15,2018,Kerala,Kollam,25997
+4,16,2018,Kerala,Wayanad,9966
+5,1,2018,Himachal Pradesh,Hamirpur,7799
+5,2,2018,Himachal Pradesh,Kangra,22592
+5,3,2018,Himachal Pradesh,Sirmaur,15787
+5,4,2018,Himachal Pradesh,Una,21570
+5,5,2018,Himachal Pradesh,Solan,28739
+5,6,2018,Himachal Pradesh,Mandi,26371
+5,7,2018,Himachal Pradesh,Bilaspur,9004
+5,8,2018,Himachal Pradesh,Chamba,16409
+5,9,2018,Himachal Pradesh,Kinnaur,5937
+5,10,2018,Himachal Pradesh,Kullu,21859
+5,11,2018,Himachal Pradesh,Shimla,51578
+6,1,2018,Assam,Kamrup Metro,29280
+6,2,2018,Assam,Tinsukia,4716
+6,3,2018,Assam,Sivasagar,2177
+6,4,2018,Assam,Morigaon,3774
+6,5,2018,Assam,Lakhimpur,1917
+6,6,2018,Assam,Sonitpur,4914
+6,7,2018,Assam,Dibrugarh,6540
+6,8,2018,Assam,Darrang,2530
+6,9,2018,Assam,Bongaigaon,1562
+6,10,2018,Assam,Nagaon,7230
+6,11,2018,Assam,Jorhat,6171
+6,12,2018,Assam,Karimganj,2360
+6,13,2018,Assam,Cachar,4478
+6,15,2018,Assam,Nalbari,1995
+6,16,2018,Assam,Dhubri,6238
+6,17,2018,Assam,Dhemaji,2261
+6,18,2018,Assam,Goalpara,6354
+6,19,2018,Assam,Golaghat,3225
+6,20,2018,Assam,Barpeta,3829
+6,21,2018,Assam,Hailakandi,3338
+6,22,2018,Assam,Kokrajhar,1397
+6,23,2018,Assam,Kamrup,1120
+6,24,2018,Assam,Udalguri,2099
+6,25,2018,Assam,Chirang,936
+6,26,2018,Assam,Karbi Anglong,2509
+6,27,2018,Assam,Baksa,764
+6,28,2018,Assam,Dima Hasao,276
+7,1,2018,Jharkhand,Bokaro,7949
+7,2,2018,Jharkhand,Dumka,6969
+7,3,2018,Jharkhand,Koderma,6757
+7,4,2018,Jharkhand,West Singhbhum at Chaibasa,3900
+7,5,2018,Jharkhand,Gumla,4720
+7,6,2018,Jharkhand,Godda,8512
+7,7,2018,Jharkhand,Hazaribagh,12200
+7,8,2018,Jharkhand,Lohardaga,2852
+7,9,2018,Jharkhand,Dhanbad,22538
+7,10,2018,Jharkhand,Giridih,14686
+7,11,2018,Jharkhand,East Singhbhum at Jamshedpur,21063
+7,12,2018,Jharkhand,Jamtara,4540
+7,13,2018,Jharkhand,Chatra,8580
+7,14,2018,Jharkhand,Pakur,3582
+7,15,2018,Jharkhand,Seraikella,3914
+7,16,2018,Jharkhand,Deoghar,6616
+7,17,2018,Jharkhand,Daltonganj,10364
+7,18,2018,Jharkhand,Simdega,2233
+7,19,2018,Jharkhand,Latehar,3422
+7,20,2018,Jharkhand,Garhwa,10994
+7,21,2018,Jharkhand,Sahibganj,4568
+7,22,2018,Jharkhand,Ranchi,16003
+7,23,2018,Jharkhand,RAMGARH,4537
+7,24,2018,Jharkhand,KHUNTI,1648
+8,1,2018,Bihar,Patna,17426
+8,2,2018,Bihar,Kaimur at Bhabhua,3789
+8,3,2018,Bihar,Samastipur,7248
+8,4,2018,Bihar,Saran at Chapra,12230
+8,5,2018,Bihar,Katihar,9581
+8,6,2018,Bihar,Begusarai,7338
+8,7,2018,Bihar,Banka,3639
+8,9,2018,Bihar,Purnea,5381
+8,10,2018,Bihar,Motihari,10600
+8,11,2018,Bihar,Munger,4609
+8,12,2018,Bihar,Madhepura,4391
+8,13,2018,Bihar,Rohtas Sasaram,5443
+8,14,2018,Bihar,Khagaria,3434
+8,15,2018,Bihar,Jamui,2736
+8,16,2018,Bihar,Aurangabad,4436
+8,17,2018,Bihar,Darbhanga,8047
+8,18,2018,Bihar,Madhubani,5907
+8,19,2018,Bihar,Lakhisarai,2345
+8,20,2018,Bihar,Sheikhpura,1840
+8,21,2018,Bihar,Saharsa,2796
+8,22,2018,Bihar,Supaul,3458
+8,23,2018,Bihar,Gopalganj,8516
+8,24,2018,Bihar,Araria,5013
+8,25,2018,Bihar,Kishanganj,2182
+8,26,2018,Bihar,Buxar,3095
+8,27,2018,Bihar,Nawada,7071
+8,28,2018,Bihar,Bettiah,9498
+8,29,2018,Bihar,Siwan,6728
+8,30,2018,Bihar,Nalanda,3772
+8,31,2018,Bihar,Sitamarhi,8043
+8,33,2018,Bihar,Bhojpur,3795
+8,34,2018,Bihar,Bhagalpur,4468
+8,35,2018,Bihar,Gaya,8195
+8,36,2018,Bihar,Jehanabad,2612
+8,37,2018,Bihar,Sheohar,287
+8,38,2018,Bihar,Muzaffarpur,4689
+8,39,2018,Bihar,Vaishali,2672
+9,1,2018,Rajasthan,Rajsamand,6589
+9,2,2018,Rajasthan,Alwar,18954
+9,3,2018,Rajasthan,Dausa,12468
+9,4,2018,Rajasthan,Jaipur Metro,51631
+9,4,2018,Rajasthan,Jaipur Metro I,2257
+9,5,2018,Rajasthan,Tonk,11111
+9,6,2018,Rajasthan,Bikaner,15505
+9,7,2018,Rajasthan,Ganganagar,20365
+9,8,2018,Rajasthan,Merta (Nagaur),17149
+9,8,2018,Rajasthan,Merta Nagaur,137
+9,9,2018,Rajasthan,Udaipur,14390
+9,10,2018,Rajasthan,Bundi,11626
+9,11,2018,Rajasthan,Hanumangarh,13442
+9,12,2018,Rajasthan,Baran,7918
+9,13,2018,Rajasthan,Bharatpur,12903
+9,14,2018,Rajasthan,Ajmer,34013
+9,18,2018,Rajasthan,Jhunjhunu,15404
+9,19,2018,Rajasthan,Pali,26313
+9,20,2018,Rajasthan,Kota,48892
+9,21,2018,Rajasthan,Jalore,6170
+9,22,2018,Rajasthan,Jhalawar,10572
+9,23,2018,Rajasthan,Pratapgarh,6228
+9,24,2018,Rajasthan,Dungarpur,5695
+9,25,2018,Rajasthan,Banswara,5760
+9,26,2018,Rajasthan,Sirohi,6481
+9,27,2018,Rajasthan,Balotra Barmer,7234
+9,28,2018,Rajasthan,Jodhpur Metro,14502
+9,29,2018,Rajasthan,Karauli,7561
+9,30,2018,Rajasthan,Chittorgarh,11086
+9,31,2018,Rajasthan,Bhilwara,13045
+9,32,2018,Rajasthan,Jaiselmer,4563
+9,33,2018,Rajasthan,Churu,8250
+9,34,2018,Rajasthan,Dholpur,4291
+9,35,2018,Rajasthan,Sikar,15633
+9,36,2018,Rajasthan,Sawai Madhopur,9897
+9,38,2018,Rajasthan,Jaipur District,8897
+9,39,2018,Rajasthan,Jodhpur District,7498
+9,40,2018,Rajasthan,Jaipur Metro II,38250
+10,1,2018,Tamil Nadu,Dharmapuri,3193
+10,2,2018,Tamil Nadu,Pudukkottai,5151
+10,3,2018,Tamil Nadu,Tirunelveli,26316
+10,4,2018,Tamil Nadu,Theni,11566
+10,5,2018,Tamil Nadu,Namakkal,5445
+10,6,2018,Tamil Nadu,Nagapattinam,8907
+10,7,2018,Tamil Nadu,Kanniyakumari,11345
+10,8,2018,Tamil Nadu,Tiruchirappalli,13332
+10,9,2018,Tamil Nadu,Thoothukudi,12869
+10,10,2018,Tamil Nadu,Viluppuram,8073
+10,11,2018,Tamil Nadu,Vellore,16660
+10,12,2018,Tamil Nadu,Salem,13188
+10,13,2018,Tamil Nadu,Chennai,14562
+10,14,2018,Tamil Nadu,Virudhunagar,22033
+10,15,2018,Tamil Nadu,Madurai,21172
+10,16,2018,Tamil Nadu,The Nilgiris,3759
+10,17,2018,Tamil Nadu,Thanjavur,13420
+10,18,2018,Tamil Nadu,Coimbatore,10917
+10,19,2018,Tamil Nadu,Karur,5207
+10,20,2018,Tamil Nadu,Cuddalore,7720
+10,21,2018,Tamil Nadu,Ramanathapuram,5127
+10,22,2018,Tamil Nadu,Tiruvannamalai,9236
+10,23,2018,Tamil Nadu,Perambalur,6314
+10,24,2018,Tamil Nadu,Erode,8814
+10,25,2018,Tamil Nadu,Tiruvarur,8404
+10,26,2018,Tamil Nadu,Krishnagiri,9995
+10,27,2018,Tamil Nadu,Dindigul,15935
+10,28,2018,Tamil Nadu,Puducherry,5940
+10,29,2018,Tamil Nadu,Sivagangai,12893
+10,30,2018,Tamil Nadu,Ariyalur,5384
+10,31,2018,Tamil Nadu,Kancheepuram,10215
+10,32,2018,Tamil Nadu,Tiruvallur,6649
+10,33,2018,Tamil Nadu,Tiruppur,11668
+11,1,2018,Orissa,Cuttack,5195
+11,2,2018,Orissa,Kendrapada,1317
+11,3,2018,Orissa,Nuapada,818
+11,4,2018,Orissa,Ganjam,4453
+11,5,2018,Orissa,Balasore,4752
+11,6,2018,Orissa,Koraput,2525
+11,7,2018,Orissa,Dhenkanal,1485
+11,8,2018,Orissa,Khurda,3387
+11,9,2018,Orissa,Gajapati,843
+11,10,2018,Orissa,Kalahandi,1599
+11,11,2018,Orissa,Sambalpur,1928
+11,12,2018,Orissa,Jharsuguda,481
+11,13,2018,Orissa,Keonjhar,2572
+11,14,2018,Orissa,Jagatsinghpur,1688
+11,15,2018,Orissa,Puri,3216
+11,16,2018,Orissa,Sundargarh,4535
+11,17,2018,Orissa,Balangir,1911
+11,18,2018,Orissa,Bhadrak,1894
+11,19,2018,Orissa,Jajpur,1695
+11,20,2018,Orissa,Sonepur,1710
+11,21,2018,Orissa,Rayagada,2655
+11,22,2018,Orissa,Nayagarh,1225
+11,23,2018,Orissa,Kandhamal,1248
+11,24,2018,Orissa,Boudh,790
+11,26,2018,Orissa,Mayurbhanj,1010
+11,27,2018,Orissa,Anugul,1726
+11,29,2018,Orissa,Bargarh,1613
+11,30,2018,Orissa,Deogarh,406
+11,31,2018,Orissa,Malkangiri,648
+11,32,2018,Orissa,Nabarangpur,774
+12,1,2018,Jammu and Kashmir,Kathua,1224
+12,2,2018,Jammu and Kashmir,Udhampur,3292
+12,3,2018,Jammu and Kashmir,Baramulla,2481
+12,4,2018,Jammu and Kashmir,Anantnag,7258
+12,5,2018,Jammu and Kashmir,Srinagar,6503
+12,6,2018,Jammu and Kashmir,Pulwama,3040
+12,7,2018,Jammu and Kashmir,Ganderbal,710
+12,8,2018,Jammu and Kashmir,Budgam,1028
+12,9,2018,Jammu and Kashmir,Reasi,614
+12,10,2018,Jammu and Kashmir,Shopian,1605
+12,11,2018,Jammu and Kashmir,Kupwara,1448
+12,12,2018,Jammu and Kashmir,Poonch,695
+12,13,2018,Jammu and Kashmir,Rajouri,1187
+12,14,2018,Jammu and Kashmir,Ramban,564
+12,15,2018,Jammu and Kashmir,Doda,2777
+12,16,2018,Jammu and Kashmir,Leh,178
+12,17,2018,Jammu and Kashmir,Kargil,85
+12,18,2018,Jammu and Kashmir,Bandipora,203
+12,19,2018,Jammu and Kashmir,Jammu,6209
+12,20,2018,Jammu and Kashmir,Kulgam,519
+12,21,2018,Jammu and Kashmir,Samba,1062
+12,22,2018,Jammu and Kashmir,Kishtwar,246
+13,1,2018,Uttar Pradesh,Allahabad,42759
+13,2,2018,Uttar Pradesh,Bareilly,40577
+13,3,2018,Uttar Pradesh,Gorakhpur,37582
+13,4,2018,Uttar Pradesh,Hardoi,12379
+13,5,2018,Uttar Pradesh,Chitrakoot,7613
+13,6,2018,Uttar Pradesh,Meerut,63333
+13,7,2018,Uttar Pradesh,Bahraich,15514
+13,8,2018,Uttar Pradesh,Ghaziabad,32821
+13,9,2018,Uttar Pradesh,Fatehpur,17104
+13,10,2018,Uttar Pradesh,Lakhimpur,18855
+13,11,2018,Uttar Pradesh,Shravasti,1920
+13,12,2018,Uttar Pradesh,Jaunpur,19615
+13,13,2018,Uttar Pradesh,Pilibhit,13615
+13,14,2018,Uttar Pradesh,Mainpuri,10429
+13,15,2018,Uttar Pradesh,Ambedkar Nagar,15719
+13,16,2018,Uttar Pradesh,Sitapur,26027
+13,17,2018,Uttar Pradesh,Auraiya,6597
+13,18,2018,Uttar Pradesh,Budaun,23659
+13,19,2018,Uttar Pradesh,Kanpur Nagar,11716
+13,20,2018,Uttar Pradesh,Gautam Buddha Nagar,39838
+13,21,2018,Uttar Pradesh,Ballia,7093
+13,22,2018,Uttar Pradesh,Bhadohi SR Nagar,7656
+13,23,2018,Uttar Pradesh,Lalitpur,4798
+13,24,2018,Uttar Pradesh,Lucknow,26442
+13,25,2018,Uttar Pradesh,Etah,27794
+13,26,2018,Uttar Pradesh,Muzaffarnagar,22648
+13,27,2018,Uttar Pradesh,Varanasi,32733
+13,28,2018,Uttar Pradesh,Ghazipur,7278
+13,29,2018,Uttar Pradesh,Firozabad,25020
+13,30,2018,Uttar Pradesh,Agra,27771
+13,31,2018,Uttar Pradesh,Pratapgarh,22211
+13,33,2018,Uttar Pradesh,Etawah,9692
+13,34,2018,Uttar Pradesh,Kushinagar,12862
+13,35,2018,Uttar Pradesh,Jyotiba Phule Nagar,13389
+13,36,2018,Uttar Pradesh,Barabanki,16791
+13,37,2018,Uttar Pradesh,Kaushambi,4684
+13,38,2018,Uttar Pradesh,Mahoba,7322
+13,39,2018,Uttar Pradesh,Banda,10799
+13,40,2018,Uttar Pradesh,Kanshi Ram Nagar,10080
+13,41,2018,Uttar Pradesh,Deoria,3713
+13,42,2018,Uttar Pradesh,Mau,13764
+13,43,2018,Uttar Pradesh,Aligarh,42138
+13,44,2018,Uttar Pradesh,Azamgarh,27375
+13,45,2018,Uttar Pradesh,Baghpat,10532
+13,46,2018,Uttar Pradesh,Basti,13588
+13,47,2018,Uttar Pradesh,Bijnor,14780
+13,48,2018,Uttar Pradesh,Bulandshahr,26727
+13,49,2018,Uttar Pradesh,Faizabad,35843
+13,50,2018,Uttar Pradesh,Gonda,12449
+13,51,2018,Uttar Pradesh,Kanpur Dehat,22602
+13,52,2018,Uttar Pradesh,Maharajganj,7818
+13,53,2018,Uttar Pradesh,Mathura,35986
+13,54,2018,Uttar Pradesh,Moradabad,44033
+13,55,2018,Uttar Pradesh,Raebareli,17887
+13,56,2018,Uttar Pradesh,Rampur,22336
+13,57,2018,Uttar Pradesh,Saharanpur,21766
+13,58,2018,Uttar Pradesh,Shahjahanpur,24050
+13,59,2018,Uttar Pradesh,Siddharthnagar,10118
+13,60,2018,Uttar Pradesh,Sonbhadra,13809
+13,61,2018,Uttar Pradesh,Sultanpur,13684
+13,62,2018,Uttar Pradesh,Unnao,28976
+13,63,2018,Uttar Pradesh,Farrukhabad,8335
+13,64,2018,Uttar Pradesh,Hamirpur,7892
+13,65,2018,Uttar Pradesh,Hathras,9634
+13,66,2018,Uttar Pradesh,Jhansi,35444
+13,67,2018,Uttar Pradesh,Balrampur,6942
+13,68,2018,Uttar Pradesh,Mirzapur,12697
+13,69,2018,Uttar Pradesh,Kannauj,5846
+13,70,2018,Uttar Pradesh,Jalaun,10961
+13,71,2018,Uttar Pradesh,Santkabir Nagar,7690
+13,73,2018,Uttar Pradesh,Hapur,7135
+13,74,2018,Uttar Pradesh,Sambhal at Chandausi,13223
+13,75,2018,Uttar Pradesh,Chandauli,1636
+13,76,2018,Uttar Pradesh,Shamli,10017
+14,1,2018,Haryana,Karnal,24209
+14,2,2018,Haryana,Sirsa,12617
+14,3,2018,Haryana,Ambala,19602
+14,4,2018,Haryana,Bhiwani,20009
+14,5,2018,Haryana,Faridabad,31147
+14,6,2018,Haryana,Gurugram,52281
+14,7,2018,Haryana,Hisar,21483
+14,8,2018,Haryana,Jhajjar,7762
+14,9,2018,Haryana,Jind,14119
+14,10,2018,Haryana,Kurukshetra,28780
+14,11,2018,Haryana,Narnaul,8060
+14,12,2018,Haryana,Rohtak,26112
+14,13,2018,Haryana,Sonepat,12772
+14,14,2018,Haryana,Panchkula,14657
+14,15,2018,Haryana,Fatehabad,10392
+14,16,2018,Haryana,Kaithal,9779
+14,17,2018,Haryana,Rewari,13962
+14,18,2018,Haryana,Panipat,12415
+14,19,2018,Haryana,Nuh,6319
+14,20,2018,Haryana,Yamunanagar,10907
+14,23,2018,Haryana,Palwal,8094
+15,1,2018,Uttarakhand,Nainital,9049
+15,2,2018,Uttarakhand,Pauri Garhwal,3630
+15,3,2018,Uttarakhand,Tehri Garhwal,3495
+15,4,2018,Uttarakhand,Udham Singh Nagar,10382
+15,5,2018,Uttarakhand,Dehradun,15817
+15,6,2018,Uttarakhand,Uttarkashi,1700
+15,7,2018,Uttarakhand,Almora,1785
+15,8,2018,Uttarakhand,Chamoli,787
+15,9,2018,Uttarakhand,Haridwar,16511
+15,13,2018,Uttarakhand,Champawat,2317
+15,14,2018,Uttarakhand,Bageshwar,1262
+15,15,2018,Uttarakhand,Pithoragarh,2612
+15,16,2018,Uttarakhand,Rudraprayag,149
+16,1,2018,West Bengal,Malda,5285
+16,2,2018,West Bengal,Hooghly,14049
+16,3,2018,West Bengal,Calcutta,5309
+16,4,2018,West Bengal,Jalpaiguri,10016
+16,6,2018,West Bengal,Coochbehar,10522
+16,7,2018,West Bengal,Paschim Medinpur,23688
+16,8,2018,West Bengal,Birbhum,9520
+16,9,2018,West Bengal,Purba Medinipur,8620
+16,10,2018,West Bengal,Purulia,11030
+16,11,2018,West Bengal,Howrah,26335
+16,12,2018,West Bengal,Murshidabad,15628
+16,13,2018,West Bengal,South Dinajpur,14195
+16,14,2018,West Bengal,North  Twenty Four Parganas,20026
+16,17,2018,West Bengal,Darjeeling,2707
+16,18,2018,West Bengal,Purba Bardhaman,12566
+16,19,2018,West Bengal,Bankura,5746
+16,20,2018,West Bengal,South Twenty Four Parganas,26461
+16,21,2018,West Bengal,North Dinajpur,9666
+16,22,2018,West Bengal,Nadia,14080
+16,23,2018,West Bengal,kalimpong,825
+16,24,2018,West Bengal,Paschim Bardhaman,20632
+16,25,2018,West Bengal,Jhargram,955
+17,11,2018,Gujarat,GANDHINAGAR,14014
+17,13,2018,Gujarat,Ahmedabad,62558
+17,14,2018,Gujarat,SURAT,22278
+17,15,2018,Gujarat,Mahesana,19855
+17,16,2018,Gujarat,RAJKOT,38133
+17,17,2018,Gujarat,Amreli,7907
+17,18,2018,Gujarat,Anand,15484
+17,19,2018,Gujarat,Banaskanth at Palanpur,19188
+17,20,2018,Gujarat,Bharuch,13967
+17,21,2018,Gujarat,Bhavnagar,23411
+17,22,2018,Gujarat,Dahod,12784
+17,23,2018,Gujarat,Jamnagar,12472
+17,24,2018,Gujarat,Junagadh,8874
+17,25,2018,Gujarat,Kheda at Nadiad,17235
+17,26,2018,Gujarat,kachchh at Bhuj,16968
+17,27,2018,Gujarat,Panchmahal at Godhra,10676
+17,28,2018,Gujarat,Patan,13400
+17,29,2018,Gujarat,Sabarkantha at Himmatnagar,9444
+17,30,2018,Gujarat,Surendranagar,11803
+17,31,2018,Gujarat,Vadodara,61930
+17,32,2018,Gujarat,Navsari,13598
+17,33,2018,Gujarat,Narmada,4483
+17,34,2018,Gujarat,Tapi,5020
+17,35,2018,Gujarat,Valsad,11560
+17,36,2018,Gujarat,Porbandar,6862
+17,37,2018,Gujarat,Gir Somnath at Veraval,10827
+17,38,2018,Gujarat,Aravalli at Modasa,11394
+17,39,2018,Gujarat,MORBI,8538
+17,40,2018,Gujarat,Devbhumi Dwarka at Khambhaliya,5325
+17,41,2018,Gujarat,Chhota Udepur,7254
+17,42,2018,Gujarat,Mahisagar at Lunawada,6464
+17,43,2018,Gujarat,BOTAD,7710
+18,1,2018,Chhattisgarh,Korba,10094
+18,2,2018,Chhattisgarh,Bilaspur,19917
+18,3,2018,Chhattisgarh,Raipur,30557
+18,4,2018,Chhattisgarh,Surguja,2097
+18,4,2018,Chhattisgarh,Surguja at Ambikapur,209
+18,5,2018,Chhattisgarh,Dhamtari,3575
+18,6,2018,Chhattisgarh,Raigarh,8370
+18,7,2018,Chhattisgarh,Durg,11494
+18,9,2018,Chhattisgarh,Kawardha,2982
+18,10,2018,Chhattisgarh,Rajnandgaon,5555
+18,11,2018,Chhattisgarh,Koriya,1420
+18,12,2018,Chhattisgarh,Mahasamund,3150
+18,13,2018,Chhattisgarh,Kanker,1784
+18,15,2018,Chhattisgarh,Bastar,2011
+18,16,2018,Chhattisgarh,Jashpur,1957
+18,17,2018,Chhattisgarh,Dantewada,1605
+18,18,2018,Chhattisgarh,Janjgir,6792
+18,19,2018,Chhattisgarh,Balod,2615
+18,20,2018,Chhattisgarh,Bemetara,2996
+18,21,2018,Chhattisgarh,Surajpur,1637
+18,22,2018,Chhattisgarh,Kondagaon,1237
+18,23,2018,Chhattisgarh,Balodabazar,5078
+18,24,2018,Chhattisgarh,Mungeli,1425
+18,25,2018,Chhattisgarh,Balrampur Ramanujganj,1472
+19,1,2018,Mizoram,Aizawl,651
+20,1,2018,Tripura,West Tripura,1774
+20,2,2018,Tripura,North Tripura,603
+20,3,2018,Tripura,SouthTripura,675
+20,5,2018,Tripura,Unakoti  Tripura,1035
+20,6,2018,Tripura,Gomati District,684
+20,9,2018,Tripura,Sepahijala Tripura,336
+20,10,2018,Tripura,Khowai Tripura,610
+20,11,2018,Tripura,Dhalai Tripura,622
+21,1,2018,Meghalaya,East Khasi Hills,1819
+21,2,2018,Meghalaya,West Garo Hills,544
+21,3,2018,Meghalaya,West Jaintia Hills,36
+21,4,2018,Meghalaya,East Garo Hills,178
+21,5,2018,Meghalaya,Ri Bhoi,94
+21,7,2018,Meghalaya,West Khasi Hills,1
+22,1,2018,Punjab,Ludhiana,56937
+22,2,2018,Punjab,Jalandhar,46528
+22,3,2018,Punjab,Rupnagar,7895
+22,4,2018,Punjab,Fatehgarh Sahib,15514
+22,5,2018,Punjab,Patiala,32845
+22,6,2018,Punjab,Ferozepur,9736
+22,8,2018,Punjab,Amritsar,22647
+22,9,2018,Punjab,Faridkot,4815
+22,10,2018,Punjab,Gurdaspur,10314
+22,11,2018,Punjab,Kapurthala,12568
+22,12,2018,Punjab,Moga,8502
+22,13,2018,Punjab,Mansa,6361
+22,14,2018,Punjab,Sri Muktsar Sahib,6385
+22,15,2018,Punjab,SBS Nagar,6319
+22,16,2018,Punjab,Barnala,6815
+22,17,2018,Punjab,Bathinda,18536
+22,18,2018,Punjab,Hoshiarpurr,7634
+22,18,2018,Punjab,Hoshiarpur,360
+22,19,2018,Punjab,Sangrur,14654
+22,21,2018,Punjab,Pathankot,4127
+22,23,2018,Punjab,Tarn Taran,8145
+22,24,2018,Punjab,Mohali,9795
+22,26,2018,Punjab,Fazilka,14943
+23,1,2018,Madhya Pradesh,Jabalpur,22746
+23,2,2018,Madhya Pradesh,Narsinghpur,7285
+23,3,2018,Madhya Pradesh,Hoshangabad,10875
+23,4,2018,Madhya Pradesh,Harda,2995
+23,5,2018,Madhya Pradesh,Umaria,3013
+23,6,2018,Madhya Pradesh,Dindori,2409
+23,7,2018,Madhya Pradesh,Panna,5600
+23,8,2018,Madhya Pradesh,Alirajpur,3795
+23,9,2018,Madhya Pradesh,Jhabua,4339
+23,10,2018,Madhya Pradesh,Khandwa,6849
+23,11,2018,Madhya Pradesh,Shahdol,6409
+23,12,2018,Madhya Pradesh,Sheopur,3310
+23,13,2018,Madhya Pradesh,Datia,5312
+23,14,2018,Madhya Pradesh,Rajgarh,7842
+23,15,2018,Madhya Pradesh,Morena,10144
+23,16,2018,Madhya Pradesh,Mandleshwar,10451
+23,17,2018,Madhya Pradesh,Neemuch,5028
+23,18,2018,Madhya Pradesh,Barwani,6534
+23,19,2018,Madhya Pradesh,Shajapur,6186
+23,20,2018,Madhya Pradesh,Chhindwara,15727
+23,21,2018,Madhya Pradesh,Sidhi,3860
+23,22,2018,Madhya Pradesh,Anuppur,2769
+23,23,2018,Madhya Pradesh,Shivpuri,8470
+23,24,2018,Madhya Pradesh,Raisen,4497
+23,25,2018,Madhya Pradesh,Sehore,6294
+23,26,2018,Madhya Pradesh,Balaghat,8559
+23,27,2018,Madhya Pradesh,Damoh,7275
+23,28,2018,Madhya Pradesh,Vidisha,7134
+23,29,2018,Madhya Pradesh,Bhind,6754
+23,30,2018,Madhya Pradesh,Guna,6117
+23,31,2018,Madhya Pradesh,Singrauli,3823
+23,32,2018,Madhya Pradesh,Satna,8260
+23,33,2018,Madhya Pradesh,Seoni,7576
+23,34,2018,Madhya Pradesh,Katni,7114
+23,35,2018,Madhya Pradesh,Mandsaur,6855
+23,36,2018,Madhya Pradesh,Tikamgarh,8588
+23,37,2018,Madhya Pradesh,Betul,8741
+23,38,2018,Madhya Pradesh,Dhar,12799
+23,39,2018,Madhya Pradesh,Chhatarpur,6805
+23,40,2018,Madhya Pradesh,Dewas,11186
+23,41,2018,Madhya Pradesh,Mandla,4781
+23,42,2018,Madhya Pradesh,Ratlam,9314
+23,43,2018,Madhya Pradesh,Sagar,15172
+23,44,2018,Madhya Pradesh,Gwalior,16755
+23,45,2018,Madhya Pradesh,Ujjain,13086
+23,46,2018,Madhya Pradesh,Rewa,8550
+23,47,2018,Madhya Pradesh,Indore,40359
+23,48,2018,Madhya Pradesh,Ashoknagr,3309
+23,49,2018,Madhya Pradesh,Burhanpur,4383
+23,50,2018,Madhya Pradesh,Bhopal,29892
+24,1,2018,Sikkim,Namchi,988
+24,2,2018,Sikkim,Mangan,93
+24,3,2018,Sikkim,Gyalshing,556
+24,4,2018,Sikkim,Gangtok,1728
+25,1,2018,Manipur,Imphal East,2502
+25,2,2018,Manipur,Imphal West,4870
+25,3,2018,Manipur,Bishnupur,907
+25,4,2018,Manipur,Thoubal,2351
+25,5,2018,Manipur,Senapati,384
+25,6,2018,Manipur,Churachandpur,336
+25,8,2018,Manipur,Chandel,184
+25,9,2018,Manipur,Tamenglong,199
+26,1,2018,Delhi,North East,7151
+26,2,2018,Delhi,Shahdara,11147
+26,3,2018,Delhi,East,11581
+26,4,2018,Delhi,North,12968
+26,5,2018,Delhi,North West,17015
+26,6,2018,Delhi,South West,45144
+26,7,2018,Delhi,New Delhi,16896
+26,8,2018,Delhi,Central,34317
+26,9,2018,Delhi,West,15806
+26,10,2018,Delhi,South,28868
+26,11,2018,Delhi,South East,34748
+27,1,2018,Chandigarh,Chandigarh,23212
+29,1,2018,Telangana,Adilabad,8710
+29,2,2018,Telangana,Hyderabad,22955
+29,3,2018,Telangana,Karimnagar,5517
+29,4,2018,Telangana,Khammam,7020
+29,5,2018,Telangana,Mahabubnagar,6833
+29,6,2018,Telangana,Medak,5998
+29,7,2018,Telangana,Nalgonda,4563
+29,8,2018,Telangana,Nizamabad,3985
+29,9,2018,Telangana,Rangareddy,16987
+29,10,2018,Telangana,Warangal,4226
+30,1,2018,Goa,North Goa,11822
+30,2,2018,Goa,South Goa,12156
+31,1,2018,Diu and Daman,Diu,587
+31,2,2018,Diu and Daman,Daman,1057
+32,1,2018,DNH at Silvasa,Silvassa,1298
+33,1,2018,Ladakh,Kargil,149
+33,2,2018,Ladakh,Leh,284

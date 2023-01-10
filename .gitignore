@@ -1,0 +1,7 @@
+# .gitignore file
+csv.zip
+data/judges_clean.csv
+data/acts_sections.csv
+data/tar-gz-files
+data/keys/
+data/cases/
