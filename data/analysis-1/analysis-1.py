@@ -1,6 +1,7 @@
 # calculate the average time of decision per year
 
 import pandas as pd
+import datetime as dt
 
 def calculate_mean_days(year, cases):
     # remove all pending cases
@@ -34,28 +35,26 @@ def aggregate_cases(year, cases):
     cases_df = cases.copy(deep=True)
 
     # removing all the invalid entries (where date_of_decision is not a valid/real date)
-    cases_df = cases_df[(cases_df["date_of_decision"] < pd.to_datetime("2023-01-01", infer_datetime_format=True))
-| cases_df["date_of_decision"].isna()]
+    cases_df = cases_df[(cases_df["date_of_decision"] < pd.to_datetime("2023-01-01"))
+| (cases_df["date_of_decision"].isna())]
 
-    def decision_days(row):
-        #print(type(row['date_of_decision']))
-        if pd.isnull(row['date_of_decision']):
-            return pd.to_timedelta(0, unit='D')
-        else:
-            #print(row['date_of_decision'] - row['date_of_filing'])
-            return row['date_of_decision'] - row['date_of_filing']
-
+    temp = cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_filing"]
+    cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_decision"] = temp
     cases_df["pending"] = cases_df["date_of_decision"].isna().apply(lambda x : 1 if x else 0)
     cases_df["solved"] = 1 - cases_df["pending"]
     cases_df["total"] = 1
-    cases_df["decision_days"] = cases_df.apply(decision_days, axis=1)
-    temp = cases_df[cases_df["decision_days"] < pd.to_timedelta(0)]
-    print(temp[["date_of_filing", "date_of_decision", "decision_days"]].head())
+
+    cases_df["decision_days"] = cases_df["date_of_decision"] - cases_df["date_of_filing"]
+    cases_df["decision_days"] = cases_df["decision_days"].dt.days
 
     final_df = cases_df[["year", "state_code", "dist_code", "pending",
     "solved", "total", "decision_days"]].groupby(["year", "state_code", "dist_code"]).agg(pending_cases=('pending', 'sum'),
     solved_cases=('solved', 'sum'), total_cases=('total', 'sum'), total_days=('decision_days', 'sum'))
+
+    final_df["mean_days"] = final_df["total_days"]/final_df["solved_cases"]
+
     final_df.to_csv(f"cases_agg/cases_agg_{year}.csv")
+
     #print(final_df.head())
     #print(cases_df[cases_df["date_of_decision"].isna()].head())
 
@@ -113,7 +112,7 @@ def judges_per_district(year):
     print(f"Number of judges per district ({year}) has been written to judges-count/judges_count_{year}.csv")
 
 def process(year):
-    cases = pd.read_csv(f'../cases/small_cases_{year}.csv')
+    cases = pd.read_csv(f'../cases/cases_{year}.csv')
     print(f'cases_{year}.csv has been loaded')
 
     cases = cases[["ddl_case_id", "year", "state_code", "dist_code", "court_no",
