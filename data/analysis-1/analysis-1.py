@@ -2,12 +2,12 @@
 
 import pandas as pd
 
-def calculate_mean_days(year, cases, districts):
+def calculate_mean_days(year, cases):
     # remove all pending cases
-    # merge things with court data
     # calcualte the decision time for each case
-    # calculate the mean decision time for each court by grouping over courts
+    # calculate the mean decision time for each district by grouping over (state_code, dist_code)
 
+    # filtering out all the cases which have been solved
     decided_cases = cases[cases["date_of_decision"].notna()].copy(deep=True)
 
     # removing all the invalid entries
@@ -20,11 +20,11 @@ def calculate_mean_days(year, cases, districts):
     #print(cases_courts.loc[cases_courts["decision_days"] == max_days, ["state_name", "district_name", "date_of_filing", "date_of_decision"]])
 
     mean_days_df = decided_cases[["year", "state_code", "dist_code", 
-    "decision_days"]].groupby(["year", "state_code", "dist_code"]).sum()
+    "decision_days"]].groupby(["year", "state_code", "dist_code"]).mean()
 
     # converting datetime to just number of days
-    #mean_days_df["decision_days"] = mean_days_df["decision_days"]/pd.to_timedelta(1, unit='D')
-    #mean_days_df = mean_days_df.rename(columns={'decision_days':'mean_decision_days'})
+    mean_days_df["decision_days"] = mean_days_df["decision_days"]/pd.to_timedelta(1, unit='D')
+    mean_days_df = mean_days_df.rename(columns={'decision_days':'mean_decision_days'})
     print(mean_days_df.head())
     
     mean_days_df.to_csv(f"mean-days/mean_days_{year}.csv")
@@ -46,6 +46,15 @@ def calculate_total_cases(year, cases, courts):
     df.to_csv(f"total-cases/total_cases_{year}.csv", index=False)
     #number_cases.columns.values[-1] = "total_cases"
     print(f"total cases per district ({year}) has been writeen to total-cases/total_cases_{year}.csv")
+
+def mean_days_to_data_map(year):
+    mean_days_df = pd.read_csv(f"mean-days/mean_days_{year}.csv")
+    districts = pd.read_csv("../my-keys/district_key.csv")
+    map_unique_id = pd.read_csv("../my-keys/district_unique_id.csv")
+
+    df = pd.merge(mean_days_df, districts, how='left', on=["state_code", "dist_code"])
+    data_map_df = pd.merge(df, map_unique_id, on=["district_name"])
+    data_map_df[["Name", "Unique"]]
 
 def judges_per_district(year):
     # read the judges_clean.csv file
@@ -87,7 +96,7 @@ def judges_per_district(year):
     print(f"Number of judges per district ({year}) has been written to judges-count/judges_count_{year}.csv")
 
 def process(year):
-    cases = pd.read_csv(f'../cases/small_cases_{year}.csv')
+    cases = pd.read_csv(f'../cases/cases_{year}.csv')
     print(f'cases_{year}.csv has been loaded')
 
     cases = cases[["ddl_case_id", "year", "state_code", "dist_code", "court_no",
@@ -101,13 +110,13 @@ def process(year):
                                              infer_datetime_format=True,
                                              errors='coerce')
     
-    districts = pd.read_csv('../district_key.csv')
+    #districts = pd.read_csv('../district_key.csv')
 
-    calculate_mean_days(year, cases, districts)
-    judges_per_district(year)
-    calculate_total_cases(year, cases, districts)
+    calculate_mean_days(year, cases)
+    #judges_per_district(year)
+    #calculate_total_cases(year, cases, districts)
 
-    mean_days = pd.read_csv(f"mean-days/mean_days_{year}.csv")
+    #mean_days = pd.read_csv(f"mean-days/mean_days_{year}.csv")
     #judges = pd.read_csv(f"judges-count/judges_count_2018.csv")
     #total_cases = pd.read_csv(f"total-cases/total_cases_2018.csv")
 
