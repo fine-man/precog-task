@@ -1,12 +1,6 @@
 # Precog Programming task
 
 ## Todo
-- make a database in mysql server (done for judges table) - cannot be done
-- use the database to write complex sql queries
-
-- learn basics of Pandas and maybe R as well
-- think of analysis queries which won't take a lot of computations
-
 
 ## Ideas
 
