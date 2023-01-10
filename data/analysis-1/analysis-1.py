@@ -54,7 +54,8 @@ def mean_days_to_data_map(year):
 
     df = pd.merge(mean_days_df, districts, how='left', on=["state_code", "dist_code"])
     data_map_df = pd.merge(df, map_unique_id, on=["district_name"])
-    data_map_df[["Name", "Unique"]]
+    data_map_df[["Name", "Unique-ID","mean_decision_days"]].to_csv(f"data-map/mean_map_{year}.csv", index=False)
+    print(f"mean decision days data map {year} has been written to data-map/mean_map_{year}.csv")
 
 def judges_per_district(year):
     # read the judges_clean.csv file
@@ -126,4 +127,5 @@ def process(year):
 years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
 
 #judges_per_district(2018)
-process(2018)
+#process(2018)
+mean_days_to_data_map(2018)
