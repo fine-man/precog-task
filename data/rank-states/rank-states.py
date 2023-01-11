@@ -127,7 +127,7 @@ def data_map(column_name="mean_disposition_days"):
     df = pd.merge(merged_df, states, how='left', on=["state_code"])
 
     ascend=True
-    if column_name in ["case_disposition_rate", "cases_per_judge"]:
+    if column_name in ["case_disposition_rate"]:
         ascend=False
 
     df = df.sort_values(by=column_name, ascending=ascend)
