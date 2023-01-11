@@ -86,7 +86,7 @@ def merge(start_year, end_year):
     df["case_disposition_rate"] = df["solved_cases"]/df["total_cases"]
     df.to_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
 
-def data_map(column_name="case_pendency_rate"):
+def data_map(column_name="case_disposition_rate"):
     mean_days_df = pd.read_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
     districts = pd.read_csv("../my-keys/district_key.csv")
     map_unique_id = pd.read_csv("../my-keys/district_unique_id.csv")
