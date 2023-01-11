@@ -18,8 +18,10 @@ def aggregate_cases(year, max_year, cases):
     temp = cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_filing"]
     cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_decision"] = temp
 
+    """
     cases_df.loc[cases_df["date_of_decision"] > pd.to_datetime(f"{max_year}-12-31"), 
     "date_of_decision"] = pd.to_datetime("")
+    """
 
     cases_df["pending"] = cases_df["date_of_decision"].isna().apply(lambda x : 1 if x else 0)
     cases_df["solved"] = 1 - cases_df["pending"]
