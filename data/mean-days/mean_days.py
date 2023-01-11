@@ -4,7 +4,7 @@ import pandas as pd
 import datetime as dt
 
 # take as input
-start_year = 2015
+start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 
@@ -81,10 +81,12 @@ def merge(start_year, end_year):
     pending_cases=('pending_cases', 'sum'), solved_cases=('solved_cases', 'sum'),
     total_cases=('total_cases', 'sum'), total_days=('total_days', 'sum'))
 
-    df["mean_decision_days"] = df["total_days"]/df["solved_cases"]
-    df[["mean_decision_days"]].to_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
+    df["mean_disposition_days"] = df["total_days"]/df["solved_cases"]
+    df["case_pendency_rate"] = df["pending_cases"]/df["total_cases"]
+    df["case_disposition_rate"] = df["solved_cases"]/df["total_cases"]
+    df.to_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
 
-def data_map(column_name="mean_decision_days"):
+def data_map(column_name="case_pendency_rate"):
     mean_days_df = pd.read_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
     districts = pd.read_csv("../my-keys/district_key.csv")
     map_unique_id = pd.read_csv("../my-keys/district_unique_id.csv")
@@ -97,9 +99,10 @@ def data_map(column_name="mean_decision_days"):
 # process the data for each year separately
 years = [year for year in range(start_year, end_year + 1)]
 
-
+"""
 for year in years:
     process(year)
+"""
 
 # merge the data for all the years
 merge(start_year, end_year)
