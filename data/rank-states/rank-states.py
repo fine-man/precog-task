@@ -8,6 +8,32 @@ start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 
+def judges_per_state(start_year=2010, end_year=2018):
+    # read the judges_clean.csv file
+    # filter all the active judges in {year}
+    # merge this with district csv file
+    # group by district and count number of entries
+
+    # reading and setting up the judges dataframe
+    judges = pd.read_csv("../judges_clean.csv")
+    judges["start_date"] = pd.to_datetime(judges["start_date"],
+                                          infer_datetime_format=True,
+                                          errors='coerce')
+    judges["end_date"] = pd.to_datetime(judges["end_date"],
+                                        infer_datetime_format=True,
+                                        errors='coerce')
+
+    # filtering out all the judges who were active anywhere in the range[start_year, end_year]
+    judges.loc[judges["end_date"].isna(), "end_date"] = dt.datetime.now()
+    judges = judges[judges["start_date"] <= pd.to_datetime(f"{end_year}-12-31", infer_datetime_format=True)]
+    judges = judges[judges["end_date"] >= pd.to_datetime(f"{start_year}-01-01", infer_datetime_format=True)]
+    judges["active"] = 1
+
+    # counting the number of judges per state
+    judges = judges[["state_code", "active"]].groupby(["state_code"]).agg(judges_count=("active", "sum"))
+    judges["judges_count"].to_csv(f"temps/judges_count_{start_year}_{end_year}.csv") 
+    print(f"Number of judges per state ({start_year}-{end_year}) has been written to temps/judges_count_{start_year}_{end_year}.csv")
+
 def aggregate_cases(year, cases, max_year, disposed_after_end_year=0):
     # filter out all the invalid entries
     # make colums for pending, solved, total
@@ -86,14 +112,22 @@ def merge(start_year, end_year):
     df["case_disposition_rate"] = df["solved_cases"]/df["total_cases"]
     df.to_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
 
-def data_map(column_name="case_pendency_rate"):
+def merge_with_judges(start_year, end_year):
+    cases_merge = pd.read_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
+    judge_count = pd.read_csv(f"temps/judges_count_{start_year}_{end_year}.csv")
+
+    merged = pd.merge(cases_merge, judge_count, on=["state_code"])
+    merged["cases_per_judge"] = merged["total_cases"]/merged["judges_count"]
+    merged.to_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
+
+def data_map(column_name="mean_disposition_days"):
     merged_df = pd.read_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
     states = pd.read_csv("../my-keys/state_key.csv")
 
     df = pd.merge(merged_df, states, how='left', on=["state_code"])
 
     ascend=True
-    if column_name in ["case_disposition_rate"]:
+    if column_name in ["case_disposition_rate", "cases_per_judge"]:
         ascend=False
 
     df = df.sort_values(by=column_name, ascending=ascend)
@@ -101,6 +135,8 @@ def data_map(column_name="case_pendency_rate"):
     #data_map_df = pd.merge(df, map_unique_id, on=["district_name"])
     #data_map_df[["Name", "Unique-ID", column_name]].to_csv(f"states_{column_name}_{start_year}_{end_year}.csv", index=False)
     #print(f"mean decision days data map {year} has been written to {column_name}_{start_year}_{end_year}.csv")
+
+
 
 # process the data for each year separately
 years = [year for year in range(start_year, end_year + 1)]
@@ -111,6 +147,9 @@ for year in years:
 """
 
 # merge the data for all the years
+#judges_per_state()
 #merge(start_year, end_year)
+#merge_with_judges(start_year, end_year)
 
-data_map()
+data_map("cases_per_judge")
+
