@@ -26,7 +26,7 @@ def extract_disposition_days(year, cases):
 
 
 def process(year):
-    cases = pd.read_csv(f'../cases/small_cases_{year}.csv')
+    cases = pd.read_csv(f'../cases/cases_{year}.csv')
     print(f'cases_{year}.csv has been loaded')
 
     cases = cases[["ddl_case_id", "year", "state_code", "dist_code", "court_no",
