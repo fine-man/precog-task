@@ -13,11 +13,8 @@ def extract_disposition_days(year, cases):
     cases_df = cases.copy(deep=True)
 
     # removing all the invalid entries (where date_of_decision is not a valid/real date)
-    cases_df = cases_df[cases_df["date_of_decision"] < dt.datetime.now()]
-
-    # fixing the inconsistent data
-    temp = cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_filing"]
-    cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_decision"] = temp
+    cases_df = cases_df[(cases_df["date_of_decision"] < dt.datetime.now()) & 
+    (cases_df["date_of_filing"] < cases_df["date_of_decision"])]
 
     # removing all the cases which are pending
     cases_df = cases_df[cases_df["date_of_decision"].notna()]
