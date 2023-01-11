@@ -8,7 +8,7 @@ start_year = 2015
 end_year = 2018
 disposed_after_end_year=0
 
-def aggregate_cases(year, cases, max_year=year, disposed_after_end_year=0):
+def aggregate_cases(year, cases, max_year, disposed_after_end_year=0):
     # filter out all the invalid entries
     # make colums for pending, solved, total
     # groupby [state_code, dist_code] and then aggregate
