@@ -19,6 +19,6 @@ def merge(start_year, end_year):
     total_cases=('total_cases', 'sum'), total_days=('total_days', 'sum'))
 
     df["mean_decision_days"] = df["total_days"]/df["solved_cases"]
-    df[["mean_decision_days"]].to_csv("final.csv")
+    df[["mean_decision_days"]].to_csv(f"final.csv")
 
 merge(2010, 2018)
