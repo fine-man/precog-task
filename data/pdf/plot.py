@@ -1,25 +1,25 @@
-import pandas as pd
-from scipy.stats import norm
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from fitter import Fitter, get_common_distributions, get_distributions
 
-df = pd.read_csv("data.csv")
-data = list(df["disposition_days"])
+dataset = pd.read_csv("data.csv")
 
-# Fit a normal distribution to the data:
-mu, std = norm.fit(data)
-print(mu, std)
+sns.set_style('white')
+sns.set_context('paper', font_scale=2)
 
-"""
-# Plot the histogram.
-plt.hist(data, bins=100, density=True, alpha=0.6, color='g')
+sns.displot(data=dataset, x="disposition_days", kind="hist", bins=10000, aspect=1.5)
+disposition_days = dataset["disposition_days"].values
 
-# Plot the PDF.
-xmin, xmax = plt.xlim()
-x = np.linspace(xmin, xmax, 100)
-p = norm.pdf(x, mu, std)
-plt.plot(x, p, 'k', linewidth=2)
-title = "Fit results: mu = %.2f,  std = %.2f" % (mu, std)
-plt.title(title)
+good_distributations = ['betaprime', 'invgamma'] + get_common_distributions()
 
+f = Fitter(disposition_days, xmin=0, xmax=500, distributions=['invgamma'])
+#['invgamma', 'betaprime', 'gamma', 'chi2']
+
+#['gamma', 'lognorm', 'beta', 'burr', 'norm']
+
+f.fit()
+print(f.summary())
+print(f.get_best(method='sumsquare_error'))
 plt.show()
-"""
