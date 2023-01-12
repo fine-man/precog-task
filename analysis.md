@@ -13,6 +13,7 @@ times
 - trying to graph the crime which is most in "trend" which happens the
 most, basically figuring out which crimes are getting more or less
 prevelant
+- find the pdf of indian judicial system
 
 ## At States level
 - ranking different states based on a bunch of criterias (no data map, just
@@ -39,6 +40,8 @@ mean disposition time
 ## At state level
 - graphing number of pending cases, judges, mean decision days per district
 (bar graphs)
+- think of each court's disposition time as a random variable and then
+apply clt over all the data of a particular court.
 
 ### Trends over the years (per district of a particular state)
 All of these will be line graphs over the years and each line on the graph
