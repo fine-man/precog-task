@@ -2,8 +2,8 @@ import pandas as pd
 
 def visualize_data():
     mean_days_df = pd.read_csv(f"final.csv")
-    districts = pd.read_csv("../my-keys/district_key.csv")
-    map_unique_id = pd.read_csv("../my-keys/district_unique_id.csv")
+    districts = pd.read_csv("../processed/district_key.csv")
+    map_unique_id = pd.read_csv("../processed/district_unique_id.csv")
 
     df = pd.merge(mean_days_df, districts, how='left', on=["state_code", "dist_code"])
     data_map_df = pd.merge(df, map_unique_id, on=["district_name"])

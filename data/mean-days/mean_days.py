@@ -88,8 +88,8 @@ def merge(start_year, end_year):
 
 def data_map(column_name="case_disposition_rate"):
     mean_days_df = pd.read_csv(f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv")
-    districts = pd.read_csv("../my-keys/district_key.csv")
-    map_unique_id = pd.read_csv("../my-keys/district_unique_id.csv")
+    districts = pd.read_csv("../processed/district_key.csv")
+    map_unique_id = pd.read_csv("../processed/district_unique_id.csv")
 
     df = pd.merge(mean_days_df, districts, how='left', on=["state_code", "dist_code"])
     data_map_df = pd.merge(df, map_unique_id, on=["district_name"])
