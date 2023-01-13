@@ -5,7 +5,7 @@ import pandas as pd
 wdv_cases = []
 
 # retrieving all the act numbers related to women domestic violence
-df = pd.read_csv("../processed/domestic_violence.csv")
+df = pd.read_csv("domestic_acts.csv")
 acts = list(df['act'])
 acts = [int(act) for act in acts]
 del df
