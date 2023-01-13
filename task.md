@@ -1,8 +1,9 @@
 # Precog Programming task
 
 ## Todo
-- read up how to handle big data well in pandas (chunksize and everything)
-- filter all the acts related to women from acts_key.csv
+- read up on large data workflows in pandas
+- filter all the domestic violence cases and calculate their (disposition
+    days, pendency/disposition rates) for each district and year-wise
 - mail naman goel your progress and ask him for feedback
 
 ## Ideas
