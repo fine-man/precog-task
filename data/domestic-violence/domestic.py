@@ -128,8 +128,8 @@ def data_map(filepath, column_list, merge_on=['state_code', 'dist_code']):
 
     # read the all the relevant files
     df = pd.read_csv(filepath)
-    names_df = pd.read_csv("../processed/{merge_type}_key.csv")
-    map_unique_id = pd.read_csv("../processed/{merge_type}_unique_id.csv")
+    names_df = pd.read_csv(f"../processed/{merge_type}_key.csv")
+    map_unique_id = pd.read_csv(f"../processed/{merge_type}_unique_id.csv")
 
     # merge the file with names and then unique map id
     df = pd.merge(df, names_df, how='left', on=merge_list)
@@ -156,6 +156,7 @@ def merge_with_name(filepath, column_list, merge_on=['state_code', 'dist_code'])
 
     # merge the file with names
     df = pd.merge(df, names_df, how='left', on=merge_list)
+    df = df.sort_values(by=column_name)
     
     # saving the final csv file
     save_filepath = f"{merge_type}_{column_name}_{start_year}_{end_year}.csv"
@@ -190,4 +191,5 @@ for year in years:
 """
 
 #merge(start_year, end_year, groupby=group_list[1:])
-merge_with_name(merged_filepath, column_list, merge_on=group_list[1:])
+#merge_with_name(merged_filepath, column_list, merge_on=group_list[1:])
+data_map(merged_filepath, column_list, merge_on=group_list[1:])
