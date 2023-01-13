@@ -3,6 +3,7 @@
 ## Misc
 - [Ecourts website](https://services.ecourts.gov.in/ecourtindia_v6/?p=home/index&app_token=130ec7f3ce3c9738bb9fd9ff57c6764fe578d8739c08125c5aa0ac919c9a6f57)
 - [Women protection laws in India](https://www.legalserviceindia.com/legal/article-4101-women-protection-in-india.html)
+- [Women specific legislation](http://ncw.nic.in/important-links/List-of-Laws-Related-to-Women)
 - [ data maps with region-shading and/or points]
 - [SQL Server: maximum number of rows in table](https://stackoverflow.com/questions/759244/sql-server-the-maximum-number-of-rows-in-table)
 
@@ -10,6 +11,9 @@
 - [how to read a large csv file with Pandas](https://stackoverflow.com/questions/25962114/how-do-i-read-a-large-csv-file-with-pandas)
 - [reading large text files in Pandas](https://stackoverflow.com/questions/23411619/reading-large-text-files-with-pandas)
 - ["Large data" workflows using Pandas](https://stackoverflow.com/questions/14262433/large-data-workflows-using-pandas)
+
+## usefull stackoverflow answers
+- [Pandas read_csv: low_memory and dtype options](https://stackoverflow.com/questions/24251219/pandas-read-csv-low-memory-and-dtype-options)
 
 ## Data visualization tools
 - Tableau (paid)
