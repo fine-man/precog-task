@@ -1,10 +1,11 @@
+# filter all the domestic violence cases from acts_sections.csv
 import pandas as pd
 
 # list of women domestic violence cases dataframes
 wdv_cases = []
 
 # retrieving all the act numbers related to women domestic violence
-df = pd.read_csv("../filter-acts/domestic_violence.csv")
+df = pd.read_csv("../processed/domestic_violence.csv")
 acts = list(df['act'])
 acts = [int(act) for act in acts]
 del df
@@ -13,12 +14,12 @@ del df
 dtypes = {'ddl_judge_id': 'object', 'act' : 'float64'}
 chunksize = 10 ** 6
 filename = "../acts_sections.csv"
-usecol = ['ddl_case_id', 'act']
+usecols = ['ddl_case_id', 'act']
 
 # remove the empty rows
 # choose all the rows for which act is in acts list
 # append the dataframe to wdv_cases list
-with pd.read_csv(filename, chunksize=chunksize, usecols=usecol, dtype=dtypes) as reader:
+with pd.read_csv(filename, chunksize=chunksize, usecols=usecols, dtype=dtypes) as reader:
     for chunk in reader:
         chunk = chunk[(chunk['act'].notna()) & (chunk['ddl_case_id'].notna())]
         chunk = chunk[chunk['act'].isin(acts)]
