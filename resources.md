@@ -6,6 +6,7 @@
 - [Women specific legislation](http://ncw.nic.in/important-links/List-of-Laws-Related-to-Women)
 - [ data maps with region-shading and/or points]
 - [SQL Server: maximum number of rows in table](https://stackoverflow.com/questions/759244/sql-server-the-maximum-number-of-rows-in-table)
+- [Plotting on map of india using geopandas](https://www.kaggle.com/code/nehaprabhavalkar/how-to-plot-map-of-india-using-python)
 
 ## Processing large data files with Pandas
 - [how to read a large csv file with Pandas](https://stackoverflow.com/questions/25962114/how-do-i-read-a-large-csv-file-with-pandas)

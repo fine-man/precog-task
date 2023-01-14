@@ -6,7 +6,7 @@
 
 > Case Disposition rate : Same as case pendency rate but this is the ratio of number of disposed (decided) cases and the total cases filed
 
-> Mean Disposition days : The average number of days it took to dispose off a case
+> Mean Disposition days : The average number of days it took to dispose off a case. In other words, this is the mean difference between date of decision and date of filing
 
 ## Link to visualizations
 
@@ -27,3 +27,5 @@
 
 ### Misc
 - [case pendency rate vs mean disposition days](https://www.datawrapper.de/_/DZg2B/)
+
+![PDF](./data/pdf/disposition_days_pdf.png)
