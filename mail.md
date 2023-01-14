@@ -10,7 +10,7 @@
 
 ## Link to visualizations
 
-### district datamaps
+### District Datamaps
 - [case pendency rate per district](https://public.flourish.studio/visualisation/12409595/)
 - [Mean disposition days per district](https://public.flourish.studio/visualisation/12403529/)
 
