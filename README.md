@@ -1,4 +1,4 @@
-# Mail to Naman Goel
+# PreCog Programming Task
 
 ## Some terminology
 
