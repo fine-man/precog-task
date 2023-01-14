@@ -29,7 +29,7 @@
 - [case pendency rate vs mean disposition days](https://www.datawrapper.de/_/DZg2B/)
 
 #### Best Fit PDF
-- [Best Fit Probability Density Function For Disposition Days (2018)](https://imgur.com/a/33VYQc2)
+- [Best Fit Probability Density Function For Disposition Days (2018)](https://imgur.com/a/33VYQc2) <br>
 Here, I have looked at the solved cases of 2018 and plotted a histogram of
 the of difference between the decision date and the filing date. After that
 I found the best fit probability density function for that histogram.
