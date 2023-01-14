@@ -22,7 +22,10 @@
 ### Women Domestic Violence
 - [Mean disposition days for domestic violence cases per state](https://public.flourish.studio/visualisation/12434916/)
 - [Case Pendency rate for domestic violence cases per state](https://public.flourish.studio/visualisation/12435177/)
+- [Domestic violence cases per 1000000 women - state data map](https://public.flourish.studio/visualisation/12436114/)
+- [Domestic violence cases per 1000000 women - state ranking](https://www.datawrapper.de/_/DLAPl/)
 
 ### Misc
 - [case pendency rate vs mean disposition days](https://www.datawrapper.de/_/DZg2B/)
-- the pdf thing
+
+<div class="flourish-embed flourish-map" data-src="visualisation/12436114"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
