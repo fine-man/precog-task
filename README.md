@@ -30,7 +30,7 @@
 
 #### Best Fit PDF
 - [Best Fit Probability Density Function For Disposition Days (2018)](https://imgur.com/a/33VYQc2) <br>
-Here, I have looked at the solved cases of 2018 and plotted a histogram of
+Here, I have looked at all the solved cases of 2018 and plotted a histogram of
 the of difference between the decision date and the filing date. After that
 I found the best fit probability density function for that histogram.
 Using the best fit pdf, we can answer questions such as what is the
