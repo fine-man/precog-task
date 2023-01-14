@@ -27,6 +27,4 @@
 
 ### Misc
 - [case pendency rate vs mean disposition days](https://www.datawrapper.de/_/DZg2B/)
-
-## Probability Density function for Disposition Days (2018)
-![PDF](https://imgur.com/a/33VYQc2)
+- [Best Fit Probability Density Function For Disposition Days (2018)](https://imgur.com/a/33VYQc2)
