@@ -20,6 +20,7 @@ print(f"{filename} loaded")
 # removing all the NaN entries
 df = df[(df['act'].notna()) & (df['criminal'].notna())]
 df['act'] = df['act'].astype('int64')
+df['criminal'] = df['criminal'].astype('int64')
 
 unique_acts = df.drop_duplicates(subset=['act'], keep='first')
 
