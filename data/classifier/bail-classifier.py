@@ -52,7 +52,7 @@ def transform(cases_df):
     # turn judges into onehotencoding
     # remove all na values
     
-    cases = cases_df
+    cases = cases_df.copy(deep=True)
     # change the type of all date columns
     date_columns = ['date_of_filing', 'date_first_list', 'date_last_list', 
     'date_next_list', 'date_of_decision']
@@ -64,18 +64,18 @@ def transform(cases_df):
     for i in range(1, len(date_columns)):
         column_name = date_columns[i]
         prev_name = date_columns[i-1]
-        print(column_name, prev_name, end=' ')
+        #print(column_name, prev_name, end=' ')
         cases = cases[(cases[column_name] < dt.datetime.now()) &
                       (cases[column_name] >= cases[prev_name])]
-        print(cases.shape)
+        #print(cases.shape)
 
     # drop all the NaN values
-    cases.dropna(subset=cases.columns.values)
+    cases.dropna(subset=cases.columns.values, inplace=True)
     
     # dropping all useless columns
     cases.drop(['ddl_case_id', 'cino', 'female_defendant',
                        'female_petitioner', 'female_adv_def',
-                       'female_adv_pet'], axis=1)
+                       'female_adv_pet'], axis=1, inplace=True)
 
     
     # adding the bail column
@@ -110,14 +110,18 @@ for year in years:
 
 # all the cases where judgement is related to bail
 bail_cases_df = pd.concat(bail_cases_list)
+print("filtered all the bail cases from all the years")
 
 cases = transform(bail_cases_df)
+print("cleaned and transformed the data successfully")
 
 # split the dataset into training and testing according to distribution
 split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 for train_index, test_index in split.split(cases, cases["bail"]):
     strat_train_set = cases.iloc[train_index]
     strat_test_set = cases.iloc[test_index]
+
+print("dataset splitted")
 
 feature_columns = list(strat_train_set.columns)
 feature_columns.remove('bail')
@@ -128,12 +132,15 @@ y_train = strat_train_set['bail'].to_numpy()
 X_test = strat_test_set[feature_columns].to_numpy()
 y_test = strat_test_set['bail'].to_numpy()
 
+print("training the model...")
 clf = RandomForestClassifier(random_state=0)
 clf.fit(X_train, y_train)
-acc = accuracy_score(clf.predict(X_test, y_test))
+print("model trained")
+acc = accuracy_score(clf.predict(X_test), y_test)
+print(f"Accuracy of model = {acc}")
 
 y_train_pred = cross_val_predict(clf, X_train, y_train, cv=3)
-confusion_matrix(y_train, y_train_pred)
+print(confusion_matrix(y_train, y_train_pred))
 
 """
 Some testing stuff
