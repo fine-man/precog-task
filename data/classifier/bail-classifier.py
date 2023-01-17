@@ -92,6 +92,7 @@ def transform(cases_df):
         cases[f"{name}_month"] = cases[column_name].dt.month
         cases[f"{name}_day"] = cases[column_name].dt.day
 
+    # removing unwanted columns
     cases.drop(['judge_position', 'disp_name_s'] + date_columns, axis=1, inplace=True)
     return cases
 
@@ -110,7 +111,32 @@ for year in years:
 # all the cases where judgement is related to bail
 bail_cases_df = pd.concat(bail_cases_list)
 
+cases = transform(bail_cases_df)
+
+# split the dataset into training and testing according to distribution
+split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+for train_index, test_index in split.split(cases, cases["bail"]):
+    strat_train_set = cases.iloc[train_index]
+    strat_test_set = cases.iloc[test_index]
+
+feature_columns = list(strat_train_set.columns)
+feature_columns.remove('bail')
+
+X_train = strat_train_set[feature_columns].to_numpy()
+y_train = strat_train_set['bail'].to_numpy()
+
+X_test = strat_test_set[feature_columns].to_numpy()
+y_test = strat_test_set['bail'].to_numpy()
+
+clf = RandomForestClassifier(random_state=0)
+clf.fit(X_train, y_train)
+acc = accuracy_score(clf.predict(X_test, y_test))
+
+y_train_pred = cross_val_predict(clf, X_train, y_train, cv=3)
+confusion_matrix(y_train, y_train_pred)
+
 """
+Some testing stuff
 cases = pd.read_csv(cases_filename)
 print(f"loaded file {cases_filename}")
 
@@ -157,26 +183,4 @@ cases['decision_month'] = cases['date_of_decision'].dt.month
 cases['decision_day'] = cases['date_of_decision'].dt.day
 
 cases.drop(['year', 'date_of_filing', 'date_of_decision', 'disp_name', 'disp_name_s', 'count'], axis=1, inplace=True)
-
-# split the dataset into training and testing according to distribution
-split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
-for train_index, test_index in split.split(cases, cases["bail"]):
-    strat_train_set = cases.iloc[train_index]
-    strat_test_set = cases.iloc[test_index]
-
-feature_columns = list(strat_train_set.columns)
-feature_columns.remove('bail')
-
-X_train = strat_train_set[feature_columns].to_numpy()
-y_train = strat_train_set['bail'].to_numpy()
-
-X_test = strat_test_set[feature_columns].to_numpy()
-y_test = strat_test_set['bail'].to_numpy()
-
-clf = RandomForestClassifier(random_state=0)
-clf.fit(X_train, y_train)
-acc = accuracy_score(clf.predict(X_test, y_test))
-
-y_train_pred = cross_val_predict(clf, X_train, y_train, cv=3)
-confusion_matrix(y_train, y_train_pred)
 """
