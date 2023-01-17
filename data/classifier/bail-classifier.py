@@ -8,17 +8,25 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import StratifiedShuffleSplit
+from sklearn.model_selection import cross_val_predict
+from sklearn.metrics import confusion_matrix
 
+# filtering
 # for each year, filter all the bail related cases
 # combine the data of all these years
+
+# transformations
 # make a bail column to tell if bail was given
 # remove all the unwanted columns
+
+# making a training and testing data set
 # make a train and test data set
 # make a feature and label train and test data set
+
 # train the model
 # evaluate the model
 
-cases_filename = "../cases/small_cases_2018.csv"
+cases_filename = "../cases/cases_2018.csv"
 disp_filename = "../keys/disp_name_key.csv"
 
 cases = pd.read_csv(cases_filename)
@@ -61,6 +69,9 @@ cases = pd.merge(cases, disp, how='left', on=['year', 'disp_name'])
 bail_strings = ['bail granted', 'bail order', 'bail refused', 'bail rejected']
 cases = cases[cases['disp_name_s'].isin(bail_strings)]
 
+# removing NaN values
+cases = cases[cases['purpose_name'].notna()]
+
 # setting the bail column
 cases['bail'] = 0
 cases.loc[cases['disp_name_s'] == "bail granted", ['bail']] = 1
@@ -90,3 +101,10 @@ y_train = strat_train_set['bail'].to_numpy()
 
 X_test = strat_test_set[feature_columns].to_numpy()
 y_test = strat_test_set['bail'].to_numpy()
+
+clf = RandomForestClassifier(random_state=0)
+clf.fit(X_train, y_train)
+acc = accuracy_score(clf.predict(X_test, y_test))
+
+y_train_pred = cross_val_predict(clf, X_train, y_train, cv=3)
+confusion_matrix(y_train, y_train_pred)
