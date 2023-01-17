@@ -26,19 +26,49 @@ from sklearn.metrics import confusion_matrix
 # train the model
 # evaluate the model
 
-cases_filename = "../cases/cases_2018.csv"
+# reading the display file
 disp_filename = "../keys/disp_name_key.csv"
+disp_df = pd.read_csv(disp_filename)
+print(f"loaded file {disp_filename}")
 
+# strings related to bail judgement
+bail_strings = ['bail granted', 'bail order', 'bail refused', 'bail rejected']
+
+# filtering all the judgements related to bail
+disp_df = disp_df[disp_df['disp_name_s'].isin(bail_strings)]
+
+bail_cases_list = []
+
+def transform(cases_df):
+    # remove unwanted columns
+    # change the type of date columns
+    
+    # change the type of all date columns
+    date_columns = ['date_of_filing', 'date_of_decision', 'date_first_list', 
+    'date_last_list', 'date_next_list']
+
+    for column_name in date_columns:
+        cases[column_name] = pd.to_datetime(cases[column_name], errors='coerce')
+
+
+def filter_cases(year, disp=disp_df):
+    cases = pd.read_csv(f'../cases/cases_{year}.csv')
+    print(f'cases_{year}.csv has been loaded')
+
+    cases = pd.merge(cases, disp, on=['year', 'disp_name'])
+    return cases
+
+years = [year for year in range(2010, 2019)]
+
+for year in years:
+    bail_cases_list.append(filter_cases(year))
+
+# all the cases where judgement is related to bail
+bail_cases_df = pd.concat(bail_cases_list)
+
+"""
 cases = pd.read_csv(cases_filename)
 print(f"loaded file {cases_filename}")
-
-cases["date_of_filing"] = pd.to_datetime(cases["date_of_filing"],
-                                         infer_datetime_format=True,
-                                         errors='coerce')
-
-cases["date_of_decision"] = pd.to_datetime(cases["date_of_decision"],
-                                         infer_datetime_format=True,
-                                         errors='coerce')
 
 cases = cases[['year', 'state_code', 'dist_code', 'court_no', 'type_name', 'purpose_name', 'disp_name', 'date_of_filing', 'date_of_decision']]
 
@@ -55,8 +85,6 @@ print(cases.columns)
 # try to transform the mail female columns as well
 
 # loading disp_key_name.csv
-disp = pd.read_csv(disp_filename)
-print(f"loaded file {disp_filename}")
 
 # removing all the invalid entries (where date of decision is not a valid/real date)
 # also removing all the date of decisions = ""
@@ -66,7 +94,6 @@ cases = cases[(cases["date_of_decision"] < dt.datetime.now()) &
 cases = pd.merge(cases, disp, how='left', on=['year', 'disp_name'])
 
 # filtering all cases where judgement is bail related
-bail_strings = ['bail granted', 'bail order', 'bail refused', 'bail rejected']
 cases = cases[cases['disp_name_s'].isin(bail_strings)]
 
 # removing NaN values
@@ -108,3 +135,4 @@ acc = accuracy_score(clf.predict(X_test, y_test))
 
 y_train_pred = cross_val_predict(clf, X_train, y_train, cv=3)
 confusion_matrix(y_train, y_train_pred)
+"""
