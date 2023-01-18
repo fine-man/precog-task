@@ -12,6 +12,10 @@
 - [how to read a large csv file with Pandas](https://stackoverflow.com/questions/25962114/how-do-i-read-a-large-csv-file-with-pandas)
 - [reading large text files in Pandas](https://stackoverflow.com/questions/23411619/reading-large-text-files-with-pandas)
 - ["Large data" workflows using Pandas](https://stackoverflow.com/questions/14262433/large-data-workflows-using-pandas)
+- [How to read just n rows in Pandas](https://stackoverflow.com/questions/23853553/python-pandas-how-to-read-only-first-n-rows-of-csv-files-in)
+
+## Pandas
+- [convert select columns in pandas dataframe to numpy array](https://stackoverflow.com/questions/31789160/convert-select-columns-in-pandas-dataframe-to-numpy-array)
 
 ## usefull stackoverflow answers
 - [Pandas read_csv: low_memory and dtype options](https://stackoverflow.com/questions/24251219/pandas-read-csv-low-memory-and-dtype-options)
