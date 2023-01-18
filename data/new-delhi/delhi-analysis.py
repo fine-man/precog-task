@@ -14,7 +14,7 @@ start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
-column_name = 'total_cases'
+column_name = 'case_pendency_rate'
 state_code = 26 # state code for New Delhi
 
 def filter_by_state_year(year, state_code=state_code):
@@ -139,21 +139,25 @@ def group_by_year(state_code=state_code, start_year=start_year, end_year=end_yea
 
     merge_df.to_csv(save_filepath)
 
-def plot(state_code=state_code, filepath="state_26_merged.csv", column_name=column_name):
+def plot(state_code=state_code, column_name=column_name):
     # read filepath
     # read the districts file
     # for each different district
+
+    filepath = f"state_{state_code}_merged.csv"
 
     state_agg = pd.read_csv(filepath)
     print(f"{filepath} loaded")
 
     districts = pd.read_csv("../processed/district_key.csv")
     districts = districts[districts['state_code'] == state_code]
+    state_name = districts.iloc[1, 1]
 
+    save_filepath = f"{column_name}_{state_name.lower()}.png"
     fig, ax = plt.subplots()
     ax.set_xlabel("year")
     ax.set_ylabel(column_name)
-    ax.set_title(f"{column_name} for each district over the years")
+    ax.set_title(f"{column_name} for each {state_name} district over the years")
     
     for index, row in districts.iterrows():
         dist_code = row['dist_code']
@@ -166,8 +170,12 @@ def plot(state_code=state_code, filepath="state_26_merged.csv", column_name=colu
         ax.plot(x, y, lw=2, label=district_name)
 
     ax.legend()
+
+    #plt.savefig(save_filepath)
+    #print(f"Graph has been saved to {save_filepath}")
+
     plt.show()
     
 #df = combine()
-group_by_year()
+#group_by_year()
 plot()
