@@ -34,12 +34,12 @@ print(f"loaded file {disp_filename}")
 disp_df.drop('count', axis=1, inplace=True)
 
 # strings related to bail judgement
-bail_strings = ['bail granted', 'bail order', 'bail refused', 'bail rejected']
+disp_strings = ['acquitted', 'convicted']
 
 # filtering all the judgements related to bail
-disp_df = disp_df[disp_df['disp_name_s'].isin(bail_strings)]
+disp_df = disp_df[disp_df['disp_name_s'].isin(disp_strings)]
 
-bail_cases_list = []
+disp_cases_list = []
 
 # function for data cleaning
 def transform(cases_df):
@@ -61,13 +61,14 @@ def transform(cases_df):
         cases[column_name] = pd.to_datetime(cases[column_name], errors='coerce')
 
     # make sure the dates are in ascending order
+    print(cases.shape)
     for i in range(1, len(date_columns)):
         column_name = date_columns[i]
         prev_name = date_columns[i-1]
-        #print(column_name, prev_name, end=' ')
+        print(column_name, prev_name, end=' ')
         cases = cases[(cases[column_name] < dt.datetime.now()) &
                       (cases[column_name] >= cases[prev_name])]
-        #print(cases.shape)
+        print(cases.shape)
 
     # drop all the NaN values
     cases.dropna(subset=cases.columns.values, inplace=True)
@@ -78,9 +79,9 @@ def transform(cases_df):
                        'female_adv_pet'], axis=1, inplace=True)
 
     
-    # adding the bail column
-    cases['bail'] = 0
-    cases.loc[cases['disp_name_s'].isin(bail_strings[0:2]), 'bail'] = 1
+    # adding the acquitted column
+    cases['acquitted'] = 0
+    cases.loc[cases['disp_name_s'].isin(disp_strings[0:1]), 'acquitted'] = 1
     
     column_dict = {'date_of_filing' : 'filing', 'date_first_list' : 'first', 
                    'date_last_list' : 'last', 'date_next_list' : 'next',
@@ -106,31 +107,31 @@ def filter_cases(year, disp=disp_df):
 years = [year for year in range(2010, 2019)]
 
 for year in years:
-    bail_cases_list.append(filter_cases(year))
+    disp_cases_list.append(filter_cases(year))
 
 # all the cases where judgement is related to bail
-bail_cases_df = pd.concat(bail_cases_list)
-print("filtered all the bail cases from all the years")
+disp_cases_df = pd.concat(disp_cases_list)
+print("filtered all the acquitted cases from all the years")
 
-cases = transform(bail_cases_df)
+cases = transform(disp_cases_df)
 print("cleaned and transformed the data successfully")
 
 # split the dataset into training and testing according to distribution
 split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
-for train_index, test_index in split.split(cases, cases["bail"]):
+for train_index, test_index in split.split(cases, cases["acquitted"]):
     strat_train_set = cases.iloc[train_index]
     strat_test_set = cases.iloc[test_index]
 
 print("dataset splitted")
 
 feature_columns = list(strat_train_set.columns)
-feature_columns.remove('bail')
+feature_columns.remove('acquitted')
 
 X_train = strat_train_set[feature_columns].to_numpy()
-y_train = strat_train_set['bail'].to_numpy()
+y_train = strat_train_set['acquitted'].to_numpy()
 
 X_test = strat_test_set[feature_columns].to_numpy()
-y_test = strat_test_set['bail'].to_numpy()
+y_test = strat_test_set['acquitted'].to_numpy()
 
 print("training the model...")
 clf = RandomForestClassifier(random_state=0)
@@ -171,7 +172,7 @@ cases = cases[(cases["date_of_decision"] < dt.datetime.now()) &
 cases = pd.merge(cases, disp, how='left', on=['year', 'disp_name'])
 
 # filtering all cases where judgement is bail related
-cases = cases[cases['disp_name_s'].isin(bail_strings)]
+cases = cases[cases['disp_name_s'].isin(disp_strings)]
 
 # removing NaN values
 cases = cases[cases['purpose_name'].notna()]
