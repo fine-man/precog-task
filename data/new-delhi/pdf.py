@@ -41,12 +41,15 @@ ax.plot(x, gamma.pdf(x, a, loc, scale), label='gamma pdf')
 print("Best fit curve prepared")
 ax.legend()
 
-ax.set_xlim(0, 500)
+ax.set_xlim(0, 1000)
+ax.set_ylim(0, 0.02)
 
-ax.set_xlabel("disposition days")
-ax.set_ylabel("probability density")
+ax.set_xlabel("Disposition Days")
+ax.set_ylabel("Probability Density")
 ax.set_title("Best Fit Probability Density Function for Disposition Days of Delhi Cases (2010-2018)")
 ax.grid(True)
 
+# showing the plot and saving it to a file
+#plt.savefig(save_filepath)
 plt.show()
-plt.savefig(save_filepath)
+#print(f"Best fit curve graph has been saved to {save_filepath}")
