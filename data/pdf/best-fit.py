@@ -14,7 +14,7 @@ year = 2018
 # loading the dataset
 filename = f"./csv-files/days_{year}.csv"
 dataset = pd.read_csv(filename)
-print("loaded data.csv")
+print(f"loaded {filename}")
 
 # paramter file
 par_file = "parameter.pkl"
@@ -33,7 +33,7 @@ sns.displot(data=dataset, x="disposition_days", kind="hist", bins=500, aspect=1.
 disposition_days = dataset["disposition_days"].values
 good_distributations = ['betaprime', 'invgamma'] + get_common_distributions()
 
-f = Fitter(disposition_days, timeout=120,
+f = Fitter(disposition_days, timeout=1000,
            distributions=['gamma'])
 
 f.fit()

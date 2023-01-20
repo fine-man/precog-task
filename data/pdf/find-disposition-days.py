@@ -1,8 +1,9 @@
 # find the disposition days for all state cases and store them to days.csv
 import pandas as pd
+import datetime as dt
 
 year = 2018
-filename = "../cases/cases_{year}.csv"
+filename = f"../cases/cases_{year}.csv"
 
 state_cases = pd.read_csv(filename)
 print(f"loaded {filename}")

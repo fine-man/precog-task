@@ -8,7 +8,7 @@ import pickle
 
 fig, ax = plt.subplots()
 
-year = 26 # state code for Delhi
+year = 2018 # state code for Delhi
 
 filepath = f"./csv-files/days_{year}.csv"
 
@@ -50,6 +50,6 @@ ax.set_title("Best Fit Probability Density Function for Disposition Days of all 
 ax.grid(True)
 
 # showing the plot and saving it to a file
-#plt.savefig(save_filepath)
-#print(f"Best fit curve graph has been saved to {save_filepath}")
-plt.show()
+plt.savefig(save_filepath)
+print(f"Best fit curve graph has been saved to {save_filepath}")
+#plt.show()
