@@ -42,14 +42,14 @@ print("Best fit curve prepared")
 ax.legend()
 
 ax.set_xlim(0, 500)
-ax.set_ylim(0, 0.04)
+ax.set_ylim(0, 0.06)
 
 ax.set_xlabel("Disposition Days")
 ax.set_ylabel("Probability Density")
-ax.set_title("Best Fit Probability Density Function for Disposition Days of all {year} Cases")
+ax.set_title(f"Best Fit Probability Density Function for Disposition Days of all {year} Cases")
 ax.grid(True)
 
 # showing the plot and saving it to a file
-plt.savefig(save_filepath)
-print(f"Best fit curve graph has been saved to {save_filepath}")
-#plt.show()
+#plt.savefig(save_filepath)
+#print(f"Best fit curve graph has been saved to {save_filepath}")
+plt.show()
