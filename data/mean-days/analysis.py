@@ -112,26 +112,6 @@ def aggregate_cases(year, cases, max_year, disposed_after_end_year=0, groupby=['
     del cases_df
     del final_df
 
-def merge_with_judges(start_year, end_year):
-    # merge the attribute file with the judges file
-
-    # required filepaths
-    cases_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv"
-    judge_filepath = f"temps/judges_count_{start_year}_{end_year}.csv"
-    save_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv" 
-
-    # reading the required csv files
-    cases_merge = pd.read_csv(cases_filepath)
-    judge_count = pd.read_csv(judge_filepath)
-
-    # merge the judge count with the attributes dataframe
-    merged = pd.merge(cases_merge, judge_count, on=["state_code"])
-    merged["cases_per_judge"] = merged["total_cases"]/merged["judges_count"]
-
-    # saving the final dataframe
-    merged.to_csv(save_filepath)
-    print(f"saved the states attributes file combined with judge-count to {save_filepath}")
-
 def merge(start_year, end_year, groupby=['state_code', 'dist_code']):
     # start with each year
     # combine the dataframes
@@ -182,9 +162,9 @@ def merge_with_judges(start_year, end_year, groupby=['state_code', 'dist_code'])
     group_type = get_group_type(group_list)
 
     # required filepaths
-    cases_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv"
+    cases_filepath = f"temps/{group_type}_agg_{start_year}_{end_year}.csv"
     judge_filepath = f"temps/{group_type}_judges_count_{start_year}_{end_year}.csv"
-    save_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv" 
+    save_filepath = f"temps/{group_type}_agg_{start_year}_{end_year}.csv" 
 
     # reading the required csv files
     cases_merge = pd.read_csv(cases_filepath)
@@ -195,8 +175,31 @@ def merge_with_judges(start_year, end_year, groupby=['state_code', 'dist_code'])
     merged["cases_per_judge"] = merged["total_cases"]/merged["judges_count"]
 
     # saving the final dataframe
-    merged.to_csv(save_filepath)
-    print(f"saved the states attributes file combined with judge-count to {save_filepath}")
+    merged.to_csv(save_filepath, index=False)
+    print(f"saved the {group_type}-wise attributes file combined with judge-count to {save_filepath}")
+
+def data_map(filepath, column_list, merge_on=['state_code', 'dist_code']):
+    merge_list = merge_on
+
+    # set the type of merge
+    merge_type = get_group_type(merge_list)
+    
+    # get the column name by which to name the save_filepath
+    column_name = get_column_name(column_list)
+
+    # read all the relevant files
+    df = pd.read_csv(filepath)
+    names_df = pd.read_csv(f"../processed/{merge_type}_key.csv")
+    map_unique_id = pd.read_csv(f"../processed/{merge_type}_unique_id.csv")
+
+    # merge the file with names and then unique map id
+    df = pd.merge(df, names_df, how='left', on=merge_list)
+    data_map_df = pd.merge(df, map_unique_id, on=[f"{merge_type}_name"])
+    
+    # saving the final csv file
+    save_filepath = f"./csv-files/{merge_type}_{column_name}_map_{start_year}_{end_year}.csv"
+    data_map_df[["Name", "Unique-ID"] + column_list].to_csv(save_filepath, index=False)
+    print(f"{column_name} data map has been saved to {save_filepath}")
 
 def process(year):
     cases = pd.read_csv(f'../cases/cases_{year}.csv')
@@ -216,30 +219,6 @@ def process(year):
     aggregate_cases(year, cases, end_year, groupby=group_list)
     del cases
 
-
-def data_map(filepath, column_list, merge_on=['state_code', 'dist_code']):
-    merge_list = merge_on
-
-    # set the type of merge
-    merge_type = get_group_type(merge_list)
-    
-    # get the column name by which to name the save_filepath
-    column_name = get_column_name(column_list)
-
-    # read the all the relevant files
-    df = pd.read_csv(filepath)
-    names_df = pd.read_csv(f"../processed/{merge_type}_key.csv")
-    map_unique_id = pd.read_csv(f"../processed/{merge_type}_unique_id.csv")
-
-    # merge the file with names and then unique map id
-    df = pd.merge(df, names_df, how='left', on=merge_list)
-    data_map_df = pd.merge(df, map_unique_id, on=[f"{merge_type}_name"])
-    
-    # saving the final csv file
-    save_filepath = f"./csv-files/{merge_type}_{column_name}_map_{start_year}_{end_year}.csv"
-    data_map_df[["Name", "Unique-ID"] + column_list].to_csv(save_filepath, index=False)
-    print(f"{column_name} data map has been saved to {save_filepath}")
-
 # process the data for each year separately
 years = [year for year in range(start_year, end_year + 1)]
 
@@ -250,6 +229,6 @@ for year in years:
 
 # merge the data for all the years
 count_judges(start_year, end_year, groupby=group_list[1:])
-merge_with_judges(start_year, end_year, groupby=group_list[1:])
 merge(start_year, end_year, groupby=group_list[1:])
+merge_with_judges(start_year, end_year, groupby=group_list[1:])
 data_map(merged_filepath, column_list, merge_on=group_list[1:])
