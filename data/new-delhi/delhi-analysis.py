@@ -125,7 +125,7 @@ only_filed_cases=0):
     # reading the state csv file
     state_filepath = f"../processed/state_{state_code}_cases.csv" 
     df_list = []
-    save_filepath = f"state{only_filed_cases}_{state_code}_merged.csv"
+    save_filepath = f"./csv-files/state{only_filed_cases}_{state_code}_merged.csv"
 
     state_case_df = pd.read_csv(state_filepath)
     print(f"{state_filepath} loaded")
@@ -152,7 +152,7 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
     # read the districts file
     # for each different district
 
-    filepath = f"state{only_filed_cases}_{state_code}_merged.csv"
+    filepath = f"./csv-files/state{only_filed_cases}_{state_code}_merged.csv"
 
     state_agg = pd.read_csv(filepath)
     print(f"{filepath} loaded")
