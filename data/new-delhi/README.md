@@ -19,7 +19,7 @@ filing`. After that, I found the best fit probability density function for
 that histogram. Using the best fit pdf, we can answer questions such as
 what is the approximate probability that a case will be solved between date
 `A` and date `B`.
-![PDF of New Delhi cases (2010-2018)](./pdf.png)
+![PDF of New Delhi cases (2010-2018)](images/pdf.png)
 
 ## Case Pendency Rate for each district in Delhi over the years
 > Case Pendency Rate : The ratio of the number of pending cases and the total cases
@@ -32,12 +32,14 @@ which were either filed in that year, solved in that year (filing date
 could be from a previous year as well), or were pending in that year (again
 filing date can be from a previous year)
 
-![Case Pendency Rate](./case_pendency_rate_delhi0.png)
+![Case Pendency Rate](images/case_pendency_rate_delhi0.png)
 It is interesting to note the drop in case pendency rate of South West
 Delhi in 2014. I tried investigating this sudden drop in the case pendency
 rate but I think just the metadata of the cases is not enough to tell us
 why this sudden drop might have happened. One of the reasons could be that
 the data is incomplete for the year 2014.
+
+![Case Pendency Rate](images/case_pendency_rate_delhi1.png)
 
 ## Mean Disposition Days for each district in Delhi over the years
 > Mean Disposition Days : The average number of days it took of dispose of a case. In other words, this is the mean difference between date of decision and date of filing.
@@ -47,4 +49,13 @@ solved in that year regardless of when the case was filed. Because of this reaso
 can see that the mean disposition days is very low in the beginning because we don't 
 have data for cases that were filed before 2010 but as we go further, we get more 
 accurate values of mean disposition days for those years
-![Mean disposition Days](./mean_disposition_days_delhi0.png)
+
+### Considering all cases in an year
+![Mean disposition Days](images/mean_disposition_days_delhi0.png)
+
+### Only considering cases filed in an year
+![Mean disposition days](images/mean_disposition_days_delhi1.png)
+
+## Total Domestic Violence cases for each district in Delhi over the years
+
+![Total Domestic Violence cases](images/domestic_total_cases_delhi1.png)

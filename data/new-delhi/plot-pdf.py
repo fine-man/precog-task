@@ -50,6 +50,6 @@ ax.set_title("Best Fit Probability Density Function for Disposition Days of Delh
 ax.grid(True)
 
 # showing the plot and saving it to a file
-plt.savefig(save_filepath)
-#plt.show()
-print(f"Best fit curve graph has been saved to {save_filepath}")
+#plt.savefig(save_filepath)
+#print(f"Best fit curve graph has been saved to {save_filepath}")
+plt.show()
