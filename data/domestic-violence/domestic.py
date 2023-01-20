@@ -43,14 +43,14 @@ def aggregate_cases(year, cases, max_year, disposed_after_end_year=0, groupby=['
     # get the type of grouping
     group_type = get_group_type(group_list[1:])
 
+    # required filepaths
+    save_filepath = f"cases_agg/{group_type}_agg_{year}.csv"
+    domestic_filepath = "../processed/domestic_cases_id.csv"
+
     # removing all the invalid entries (where date_of_decision is not a valid/real date)
     cases_df = cases_df[((cases_df["date_of_decision"] < dt.datetime.now()) & 
     (cases_df["date_of_decision"] >= cases_df["date_of_filing"]))
     | (cases_df["date_of_decision"].isna())]
-
-    # fixing the inconsistent data
-    #temp = cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_filing"]
-    #cases_df.loc[cases_df["date_of_decision"] < cases_df["date_of_filing"], "date_of_decision"] = temp
 
     # condition to check if "date_of_decision" > max_year should be considered pending
     if not disposed_after_end_year:
@@ -58,7 +58,7 @@ def aggregate_cases(year, cases, max_year, disposed_after_end_year=0, groupby=['
         "date_of_decision"] = pd.to_datetime("")
 
     # read all the cases of women domestic violence
-    domestic_case_id = pd.read_csv("../processed/domestic_cases_id.csv")
+    domestic_case_id = pd.read_csv(domestic_filepath)
 
     # filter in all the cases of domestic violence
     cases_df = pd.merge(domestic_case_id, cases_df, how='left', on=['ddl_case_id'])
@@ -79,8 +79,8 @@ def aggregate_cases(year, cases, max_year, disposed_after_end_year=0, groupby=['
 
     final_df["mean_disposition_days"] = final_df["total_days"]/final_df["solved_cases"]
 
-    final_df.to_csv(f"cases_agg/{group_type}_agg_{year}.csv")
-    print(f"the {group_type} wise aggregate of {year} cases has been written to cases_agg/{group_type}_agg_{year}.csv")
+    final_df.to_csv(save_filepath)
+    print(f"the {group_type} wise aggregate of {year} cases has been written to {save_filepath}")
     del cases_df
     del final_df
 
@@ -92,16 +92,23 @@ def merge(start_year, end_year, groupby=['state_code', 'dist_code']):
     # setting the type of grouping
     group_type = get_group_type(group_list)
 
+    # required filepaths
+    filepath = f"cases_agg/{group_type}_agg_{start_year}.csv"
+    save_filepath = f"temps/{group_type}_agg_{start_year}_{end_year}.csv"
+
     # reading the initial data frame
-    df = pd.read_csv(f"cases_agg/{group_type}_agg_{start_year}.csv")
-    print(f"loaded cases_agg/{group_type}_agg_{start_year}.csv")
+    df = pd.read_csv(filepath)
+    print(f"loaded {filepath}")
 
     # concatinating all the data frames
     for year in range(start_year + 1, end_year + 1):
-        df_2 = pd.read_csv(f"cases_agg/{group_type}_agg_{year}.csv")
-        print(f"loaded cases_agg/{group_type}_agg_{year}.csv")
+        filepath = f"cases_agg/{group_type}_agg_{year}.csv"
+        df_2 = pd.read_csv(filepath)
+        print(f"loaded {filepath}")
+
         df = pd.concat([df, df_2], axis=0) 
-        print(f"concated cases_agg/{group_type}_agg_{year}.csv")
+
+        print(f"concated {filepath}")
     
     # grouping and aggregating
     df = df[group_list + ["pending_cases", "solved_cases",
@@ -115,7 +122,8 @@ def merge(start_year, end_year, groupby=['state_code', 'dist_code']):
     df["case_disposition_rate"] = df["solved_cases"]/df["total_cases"]
 
     # saving to the file
-    df.to_csv(f"temps/{group_type}_agg_{start_year}_{end_year}.csv")
+    df.to_csv(save_filepath)
+    print(f"All {group_type}-wise attributes has been saved to {save_filepath}")
 
 def data_map(filepath, column_list, merge_on=['state_code', 'dist_code']):
     merge_list = merge_on
@@ -136,7 +144,7 @@ def data_map(filepath, column_list, merge_on=['state_code', 'dist_code']):
     data_map_df = pd.merge(df, map_unique_id, on=[f"{merge_type}_name"])
     
     # saving the final csv file
-    save_filepath = f"{merge_type}_{column_name}_map_{start_year}_{end_year}.csv"
+    save_filepath = f"./csv-files/{merge_type}_{column_name}_map_{start_year}_{end_year}.csv"
     data_map_df[["Name", "Unique-ID"] + column_list].to_csv(save_filepath, index=False)
     print(f"{column_name} data map has been saved to {save_filepath}")
 
@@ -159,7 +167,7 @@ def merge_with_name(filepath, column_list, merge_on=['state_code', 'dist_code'])
     df = df.sort_values(by=column_name)
     
     # saving the final csv file
-    save_filepath = f"{merge_type}_{column_name}_{start_year}_{end_year}.csv"
+    save_filepath = f"./csv-files/{merge_type}_{column_name}_{start_year}_{end_year}.csv"
     df[[f'{merge_type}_name'] + column_list].to_csv(save_filepath, index=False)
     print(f"{column_name} with {merge_type}_names has been saved to {save_filepath}")
 
