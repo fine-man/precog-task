@@ -47,6 +47,7 @@ the density decreases due to the lack of sufficient data in that range.
 ### Cases Per Judge vs Case Pendency Rate
 Again we can see that there is no correlation between the average number of
 cases assigned to a judge and the average number of cases that are pending.
+
 ![Cases vs Pendency](images/cases-vs-pendency.png)
 
 ### Conclusion
