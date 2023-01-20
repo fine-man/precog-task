@@ -14,9 +14,9 @@ start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
-column_name = 'case_pendency_rate'
+column_name = 'mean_disposition_days'
 state_code = 26 # state code for New Delhi
-only_filed_cases=1
+only_filed_cases=0
 
 def filter_by_state_year(year, state_code=state_code):
     # filter all the cases of a particular state for a particular year
@@ -179,10 +179,10 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
 
     ax.legend()
 
-    plt.savefig(save_filepath)
-    print(f"Graph has been saved to {save_filepath}")
+    #plt.savefig(save_filepath)
+    #print(f"Graph has been saved to {save_filepath}")
 
-    #plt.show()
+    plt.show()
     
 #df = combine()
 #group_by_year(state_code, start_year, end_year, only_filed_cases)
