@@ -161,7 +161,7 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
     districts = districts[districts['state_code'] == state_code]
     state_name = districts.iloc[1, 1]
 
-    save_filepath = f"{column_name}_{state_name.lower()}{only_filed_cases}.png"
+    save_filepath = f"./images/{column_name}_{state_name.lower()}{only_filed_cases}.png"
     fig, ax = plt.subplots()
     ax.set_xlabel("year")
     ax.set_ylabel(column_name)
@@ -182,7 +182,7 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
     #plt.savefig(save_filepath)
     #print(f"Graph has been saved to {save_filepath}")
 
-    plt.show()
+    #plt.show()
     
 #df = combine()
 #group_by_year(state_code, start_year, end_year, only_filed_cases)
