@@ -8,7 +8,7 @@ start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
-column_list = ['mean_disposition_days']
+column_list = ['cases_per_judge']
 
 def get_group_type(group_list):
     if len(group_list) == 1:
@@ -29,6 +29,41 @@ def get_column_name(column_list):
 group_type = get_group_type(group_list[1:])
 merge_on = group_list[1:]
 merged_filepath = f"temps/{group_type}_agg_{start_year}_{end_year}.csv"
+
+def count_judges(start_year=2010, end_year=2018, groupby=['year', 'state_code', 'dist_code']):
+    # read the judges_clean.csv file
+    # filter all the active judges in {year}
+    # merge this with district csv file
+    # group by district and count number of entries
+
+    group_list = groupby
+
+    # get the type of grouping
+    group_type = get_group_type(group_list)
+
+    # reading and setting up the judges dataframe
+    judges = pd.read_csv("../judges_clean.csv")
+
+    save_filepath = f"temps/{group_type}_judges_count_{start_year}_{end_year}.csv"
+
+    # changing the type of all date columns
+    date_columns = ['start_date', 'end_date']
+    for column_name in date_columns:
+        judges[column_name] = pd.to_datetime(judges[column_name], errors='coerce',
+                                            infer_datetime_format=True)
+
+    # filtering out all the judges who were active anywhere in the range[start_year, end_year]
+    judges.loc[judges["end_date"].isna(), "end_date"] = dt.datetime.now()
+    judges = judges[judges["start_date"] <= pd.to_datetime(f"{end_year}-12-31")]
+    judges = judges[judges["end_date"] >= pd.to_datetime(f"{start_year}-01-01")]
+    judges["active"] = 1
+
+    # counting the number of judges per state
+    judges = judges[group_list + ["active"]].groupby(group_list).agg(judges_count=("active", "sum"))
+
+    # saving the judges count file
+    judges["judges_count"].to_csv(save_filepath) 
+    print(f"Number of judges per {group_type} ({start_year}-{end_year}) has been written to {save_filepath}")
 
 def aggregate_cases(year, cases, max_year, disposed_after_end_year=0, groupby=['year', 'state_code', 'dist_code']):
     # filter out all the invalid entries
@@ -77,23 +112,25 @@ def aggregate_cases(year, cases, max_year, disposed_after_end_year=0, groupby=['
     del cases_df
     del final_df
 
-def process(year):
-    cases = pd.read_csv(f'../cases/cases_{year}.csv')
-    print(f'cases_{year}.csv has been loaded')
+def merge_with_judges(start_year, end_year):
+    # merge the attribute file with the judges file
 
-    cases = cases[["ddl_case_id", "year", "state_code", "dist_code", "court_no",
-                   "date_of_filing", "date_of_decision"]]
+    # required filepaths
+    cases_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv"
+    judge_filepath = f"temps/judges_count_{start_year}_{end_year}.csv"
+    save_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv" 
 
-    cases["date_of_filing"] = pd.to_datetime(cases["date_of_filing"],
-                                             infer_datetime_format=True,
-                                             errors='coerce')
+    # reading the required csv files
+    cases_merge = pd.read_csv(cases_filepath)
+    judge_count = pd.read_csv(judge_filepath)
 
-    cases["date_of_decision"] = pd.to_datetime(cases["date_of_decision"],
-                                             infer_datetime_format=True,
-                                             errors='coerce')
-    
-    aggregate_cases(year, cases, end_year, groupby=group_list)
-    del cases
+    # merge the judge count with the attributes dataframe
+    merged = pd.merge(cases_merge, judge_count, on=["state_code"])
+    merged["cases_per_judge"] = merged["total_cases"]/merged["judges_count"]
+
+    # saving the final dataframe
+    merged.to_csv(save_filepath)
+    print(f"saved the states attributes file combined with judge-count to {save_filepath}")
 
 def merge(start_year, end_year, groupby=['state_code', 'dist_code']):
     # start with each year
@@ -136,6 +173,50 @@ def merge(start_year, end_year, groupby=['state_code', 'dist_code']):
     df.to_csv(save_filepath)
     print(f"All {group_type}-wise attributes has been saved to {save_filepath}")
 
+def merge_with_judges(start_year, end_year, groupby=['state_code', 'dist_code']):
+    # merge the attribute file with the judges file
+ 
+    group_list = groupby
+
+    # get the type of grouping
+    group_type = get_group_type(group_list)
+
+    # required filepaths
+    cases_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv"
+    judge_filepath = f"temps/{group_type}_judges_count_{start_year}_{end_year}.csv"
+    save_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv" 
+
+    # reading the required csv files
+    cases_merge = pd.read_csv(cases_filepath)
+    judge_count = pd.read_csv(judge_filepath)
+
+    # merge the judge count with the attributes dataframe
+    merged = pd.merge(cases_merge, judge_count, on=group_list)
+    merged["cases_per_judge"] = merged["total_cases"]/merged["judges_count"]
+
+    # saving the final dataframe
+    merged.to_csv(save_filepath)
+    print(f"saved the states attributes file combined with judge-count to {save_filepath}")
+
+def process(year):
+    cases = pd.read_csv(f'../cases/cases_{year}.csv')
+    print(f'cases_{year}.csv has been loaded')
+
+    cases = cases[["ddl_case_id", "year", "state_code", "dist_code", "court_no",
+                   "date_of_filing", "date_of_decision"]]
+
+    cases["date_of_filing"] = pd.to_datetime(cases["date_of_filing"],
+                                             infer_datetime_format=True,
+                                             errors='coerce')
+
+    cases["date_of_decision"] = pd.to_datetime(cases["date_of_decision"],
+                                             infer_datetime_format=True,
+                                             errors='coerce')
+    
+    aggregate_cases(year, cases, end_year, groupby=group_list)
+    del cases
+
+
 def data_map(filepath, column_list, merge_on=['state_code', 'dist_code']):
     merge_list = merge_on
 
@@ -168,5 +249,7 @@ for year in years:
 """
 
 # merge the data for all the years
-#merge(start_year, end_year, groupby=group_list[1:])
+count_judges(start_year, end_year, groupby=group_list[1:])
+merge_with_judges(start_year, end_year, groupby=group_list[1:])
+merge(start_year, end_year, groupby=group_list[1:])
 data_map(merged_filepath, column_list, merge_on=group_list[1:])
