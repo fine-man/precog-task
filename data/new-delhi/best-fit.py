@@ -19,6 +19,9 @@ print("loaded data.csv")
 # paramter file
 par_file = "parameter.pkl"
 
+# filename to save the final png
+save_filename = "./images/test.png"
+
 # setting up the plot
 sns.set_style('white')
 sns.set_context('paper', font_scale=2)
@@ -43,4 +46,5 @@ with open(par_file, 'wb') as f:
 
 print(parameter_dict)
 print(f"saved parameters of best fit curve to {par_file}")
-plt.savefig("./images/test.png")
+plt.savefig(save_filename)
+print(f"saved the figure {save_filename}")
