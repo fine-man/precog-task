@@ -222,13 +222,11 @@ def process(year):
 # process the data for each year separately
 years = [year for year in range(start_year, end_year + 1)]
 
-"""
 for year in years:
     process(year)
-"""
 
 # merge the data for all the years
 count_judges(start_year, end_year, groupby=group_list[1:])
 merge(start_year, end_year, groupby=group_list[1:])
 merge_with_judges(start_year, end_year, groupby=group_list[1:])
-data_map(merged_filepath, column_list, merge_on=group_list[1:])
+#data_map(merged_filepath, column_list, merge_on=group_list[1:])
