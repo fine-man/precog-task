@@ -16,6 +16,7 @@ disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
 column_name = 'case_pendency_rate'
 state_code = 26 # state code for New Delhi
+only_filed_cases=1
 
 def filter_by_state_year(year, state_code=state_code):
     # filter all the cases of a particular state for a particular year
@@ -67,7 +68,7 @@ def filter_by_state(state_code=state_code, start_year=start_year, end_year=end_y
     print(f"all the cases of state with code={state_code} have been saved to {save_filepath}")
     return state_cases_df
 
-def aggregate_cases(year, cases):
+def aggregate_cases(year, cases, only_filed_cases=0):
     # filter all the cases according to year
     # make colums for pending, solved, total
     # groupby [state_code, dist_code] and then aggregate
@@ -83,10 +84,14 @@ def aggregate_cases(year, cases):
     # setting all the cases whose date_of_decision > year as pending
     cases_df.loc[cases_df["date_of_decision"] > decision_date, "date_of_decision"] = pd.to_datetime("")
 
-    # selecting all the cases which were either filed/solved in that {year} or are pending
-    cases_df = cases_df[(cases_df['date_of_filing'].dt.year == year) |
-                        (cases_df['date_of_decision'].dt.year == year) |
-                        ((cases_df['date_of_filing'].dt.year <= year) & (cases_df['date_of_decision'].isna()))]
+    if only_filed_cases==0:
+        # selecting all the cases which were either filed/solved in that {year} or are pending
+        cases_df = cases_df[(cases_df['date_of_filing'].dt.year == year) |
+                            (cases_df['date_of_decision'].dt.year == year) |
+                            ((cases_df['date_of_filing'].dt.year <= year) & (cases_df['date_of_decision'].isna()))]
+    else:
+        # select only cases which were filed in a particular year
+        cases_df = cases_df[cases_df['year'] == year]
 
     cases_df['year'] = year
 
@@ -110,7 +115,8 @@ def aggregate_cases(year, cases):
     del cases_df
     return final_df
 
-def group_by_year(state_code=state_code, start_year=start_year, end_year=end_year):
+def group_by_year(state_code=state_code, start_year=start_year, end_year=end_year,
+only_filed_cases=0):
     # read the state csv file
     # change the type of date columns
     # aggregate all the years and add the df to a list
@@ -119,7 +125,7 @@ def group_by_year(state_code=state_code, start_year=start_year, end_year=end_yea
     # reading the state csv file
     state_filepath = f"../processed/state_{state_code}_cases.csv" 
     df_list = []
-    save_filepath = f"state_{state_code}_merged.csv"
+    save_filepath = f"state{only_filed_cases}_{state_code}_merged.csv"
 
     state_case_df = pd.read_csv(state_filepath)
     print(f"{state_filepath} loaded")
@@ -132,19 +138,21 @@ def group_by_year(state_code=state_code, start_year=start_year, end_year=end_yea
     # calculating the attribute values for all the different years
     years = [year for year in range(start_year, end_year + 1)]
     for year in years:
-        print(year)
-        df_list.append(aggregate_cases(year, state_case_df))
+        #print(year)
+        df_list.append(aggregate_cases(year, state_case_df, only_filed_cases))
+        print(f"Agreggated values for year={year}")
 
     merge_df = pd.concat(df_list)
 
     merge_df.to_csv(save_filepath)
+    print(f"The merged data of state with code = {state_code} has been saved to {save_filepath}")
 
-def plot(state_code=state_code, column_name=column_name):
+def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
     # read filepath
     # read the districts file
     # for each different district
 
-    filepath = f"state_{state_code}_merged.csv"
+    filepath = f"state{only_filed_cases}_{state_code}_merged.csv"
 
     state_agg = pd.read_csv(filepath)
     print(f"{filepath} loaded")
@@ -153,7 +161,7 @@ def plot(state_code=state_code, column_name=column_name):
     districts = districts[districts['state_code'] == state_code]
     state_name = districts.iloc[1, 1]
 
-    save_filepath = f"{column_name}_{state_name.lower()}.png"
+    save_filepath = f"{column_name}_{state_name.lower()}{only_filed_cases}.png"
     fig, ax = plt.subplots()
     ax.set_xlabel("year")
     ax.set_ylabel(column_name)
@@ -171,11 +179,11 @@ def plot(state_code=state_code, column_name=column_name):
 
     ax.legend()
 
-    #plt.savefig(save_filepath)
-    #print(f"Graph has been saved to {save_filepath}")
+    plt.savefig(save_filepath)
+    print(f"Graph has been saved to {save_filepath}")
 
-    plt.show()
+    #plt.show()
     
 #df = combine()
-#group_by_year()
-plot()
+#group_by_year(state_code, start_year, end_year, only_filed_cases)
+plot(state_code, column_name, only_filed_cases)
