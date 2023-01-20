@@ -28,6 +28,7 @@ As for a use-case of this, apart from just trying to describe the whole
 judicial system using a single mathematical equation. This probability
 density function can be used to approximate the probability that a case in
 India will solved between date `A` and date `B`.
+
 ![PDF](images/pdf.png)
 
 ## Correlation between various things
@@ -36,12 +37,14 @@ India will solved between date `A` and date `B`.
 As we can see, there seems to be no correlation between the average number
 of cases assigned to a judge and the average amount of time it took for the
 cases to be disposed off.
+
 ![Cases vs Disposition](images/cases-vs-disposition.png)
 
 ### Case Pendency Rate vs Mean Disposition Days 
 It is observed that as the ratio of pending cases increases, the mean 
 disposition days also increases. As we move above the range of 0.6-0.7, 
 the density decreases due to the lack of sufficient data in that range.
+
 ![Pendency vs Disposition](images/pendency-vs-disposition.png)
 
 ### Cases Per Judge vs Case Pendency Rate
