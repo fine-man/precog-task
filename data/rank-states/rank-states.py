@@ -7,7 +7,7 @@ import datetime as dt
 start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
-column_name = "mean_disposition_days"
+column_name = "cases_per_judge"
 
 def judges_per_state(start_year=2010, end_year=2018):
     # read the judges_clean.csv file
@@ -23,7 +23,8 @@ def judges_per_state(start_year=2010, end_year=2018):
     # changing the type of all date columns
     date_columns = ['start_date', 'end_date']
     for column_name in date_columns:
-        cases[column_name] = pd.to_datetime(cases[column_name], errors='coerce')
+        judges[column_name] = pd.to_datetime(judges[column_name], errors='coerce',
+                                            infer_datetime_format=True)
 
     # filtering out all the judges who were active anywhere in the range[start_year, end_year]
     judges.loc[judges["end_date"].isna(), "end_date"] = dt.datetime.now()
@@ -155,13 +156,13 @@ def merge_with_judges(start_year, end_year):
 def data_map(column_name="mean_disposition_days"):
     # required filepath
     cases_filepath = f"temps/merged{disposed_after_end_year}_{start_year}_{end_year}.csv"
-    state_key_filepath = "../my-keys/state_key.csv"
+    state_key_filepath = "../processed/state_key.csv"
     save_filepath = f"./csv-files/states_{column_name}_{start_year}_{end_year}.csv"
 
     merged_df = pd.read_csv(cases_filepath)
     print(f"loaded {cases_filepath}")
 
-    states = pd.read_csv(state_filepath)
+    states = pd.read_csv(state_key_filepath)
 
     # merging the state_codes with state_names
     df = pd.merge(merged_df, states, how='left', on=["state_code"])
@@ -182,13 +183,15 @@ def data_map(column_name="mean_disposition_days"):
 # process the data for each year separately
 years = [year for year in range(start_year, end_year + 1)]
 
+"""
 for year in years:
     process(year)
+"""
 
 # merge the data for all the years
-judges_per_state()
-merge(start_year, end_year)
-merge_with_judges(start_year, end_year)
+#judges_per_state()
+#merge(start_year, end_year)
+#merge_with_judges(start_year, end_year)
 
 # creating the datamap csv files
-data_map("cases_per_judge")
+data_map(column_name)
