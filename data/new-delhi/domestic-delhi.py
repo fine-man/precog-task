@@ -14,9 +14,9 @@ start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
-column_name = 'mean_disposition_days'
+column_name = 'total_cases'
 state_code = 26 # state code for New Delhi
-only_filed_cases=1
+only_filed_cases=0
 
 def aggregate_domestic_cases(year, cases, only_filed_cases=0):
     # filter all the cases according to year
@@ -121,7 +121,7 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
     fig, ax = plt.subplots()
     ax.set_xlabel("year")
     ax.set_ylabel(column_name)
-    ax.set_title(f"{column_name} for each {state_name} district over the years")
+    ax.set_title(f"{column_name} for Domestic Violence in each district of {state_name} over the years")
     
     for index, row in districts.iterrows():
         dist_code = row['dist_code']
@@ -135,11 +135,11 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
 
     ax.legend()
 
-    plt.savefig(save_filepath)
-    print(f"Graph has been saved to {save_filepath}")
+    #plt.savefig(save_filepath)
+    #print(f"Graph has been saved to {save_filepath}")
 
-    #plt.show()
+    plt.show()
     
 #df = combine()
-group_by_year(state_code, start_year, end_year, only_filed_cases)
+#group_by_year(state_code, start_year, end_year, only_filed_cases)
 plot(state_code, column_name, only_filed_cases)
