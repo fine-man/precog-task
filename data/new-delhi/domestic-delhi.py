@@ -16,7 +16,7 @@ disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
 column_name = 'mean_disposition_days'
 state_code = 26 # state code for New Delhi
-only_filed_cases=0
+only_filed_cases=1
 
 def aggregate_domestic_cases(year, cases, only_filed_cases=0):
     # filter all the cases according to year
