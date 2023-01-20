@@ -17,6 +17,6 @@ for column_name in date_columns:
 state_cases['disposition_days'] = state_cases['date_of_decision'] - state_cases['date_of_filing']
 state_cases['disposition_days'] = state_cases['disposition_days'].dt.days
 
-save_filename = f"days_{state_code}.csv"
+save_filename = f"./csv-files/days_{state_code}.csv"
 state_cases['disposition_days'].to_csv(save_filename, index=False)
 print(f"saved dispositon days for all cases of state with code {state_code} to {save_filename}")

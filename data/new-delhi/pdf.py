@@ -10,12 +10,12 @@ fig, ax = plt.subplots()
 
 state_code = 26 # state code for Delhi
 
-filepath = f"days_{state_code}.csv"
+filepath = f"./csv-files/days_{state_code}.csv"
 
 # parameters file
 par_file = "parameter.pkl"
 
-save_filepath = "pdf.png"
+save_filepath = "./images/pdf.png"
 
 # loading the dataset for histogram
 df = pd.read_csv(filepath)
@@ -50,6 +50,6 @@ ax.set_title("Best Fit Probability Density Function for Disposition Days of Delh
 ax.grid(True)
 
 # showing the plot and saving it to a file
-#plt.savefig(save_filepath)
-plt.show()
-#print(f"Best fit curve graph has been saved to {save_filepath}")
+plt.savefig(save_filepath)
+#plt.show()
+print(f"Best fit curve graph has been saved to {save_filepath}")

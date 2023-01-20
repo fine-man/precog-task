@@ -12,7 +12,7 @@ from fitter import Fitter, get_common_distributions, get_distributions
 state_code = 26 # state code for Delhi
 
 # loading the dataset
-filename = f"days_{state_code}.csv"
+filename = f"./csv-files/days_{state_code}.csv"
 dataset = pd.read_csv(filename)
 print("loaded data.csv")
 
@@ -43,4 +43,4 @@ with open(par_file, 'wb') as f:
 
 print(parameter_dict)
 print(f"saved parameters of best fit curve to {par_file}")
-plt.savefig("test.png")
+plt.savefig("./images/test.png")
