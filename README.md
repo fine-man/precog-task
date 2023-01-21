@@ -1,38 +1,46 @@
-# PreCog Programming Task
+# Precog Programming Task
+
+## Build Instructions
+
+## Motivation behind the analysis
+The underlying principle behind all three of my analyses is to identify 
+ways to enhance court performance and efficiency. This involves identifying 
+areas where efficiency is lacking and allocating resources accordingly. 
+
+Another objective of the analysis is to use data to determine where stricter 
+regulations are needed for certain crimes and where they are not. I used the 
+example of women's domestic violence in my analysis, but the method can be 
+applied to other crimes as well.
 
 ## Some terminology
+These are some terms that I will be referencing throughout my analysis and
+so I just kept it in the main README.
 
-> Case Pendency rate : The ratio of the number of pending cases and the total cases filed
+> Case Pendency Rate : The ratio of the number of pending cases and the total cases filed. Places with a lower case pendency rate will be considered to have a more efficient judiciary.
 
-> Case Disposition rate : Same as case pendency rate but this is the ratio of number of disposed (decided) cases and the total cases filed
+> Case Disposition Rate : Same as case pendency rate but this is the ratio of number of disposed (decided) cases and the total cases filed. Places with a higher case disposition rate will be considered to have a more efficient judiciary.
 
-> Mean Disposition days : The average number of days it took to dispose off a case. In other words, this is the mean difference between date of decision and date of filing
+> Mean Disposition Days : The average number of days it took to dispose off a case. In other words, this is the mean difference between date of decision and date of filing. Places with a lower mean disposition days will be considered to have a more efficient judiciary.
 
-## Link to visualizations
+> Cases Per Judge : This is the average number of cases assigned to each judge in a particular place. This is a measure of the workload on the judiciary and so places with lower cases per judge will be considered to have a more efficient judiciary.
 
-### District Datamaps
-- [case pendency rate per district](https://public.flourish.studio/visualisation/12409595/)
-- [Mean disposition days per district](https://public.flourish.studio/visualisation/12403529/)
+## Different kinds of analysis
+- A General Analysis : In this analysis, I look at the whole country at
+once and try to find correlation between various things. The folder for
+this analysis is `general-analysis` in `data` directory.
 
-### State rankings
-- [ranking states based on case pendency rate](https://www.datawrapper.de/_/rKHij/)
-- [ranking states based on cases per judge](https://www.datawrapper.de/_/58Aq4/)
-- [ranking states based on mean disposition time](https://www.datawrapper.de/_/BLwtO/)
+- A State Analysis : In this analysis, I look at the cases from a state
+perspective and rank them based on various criteria and also find the state
+with the most efficient judiciary according to the set of metrics
+defined above. The folder for this analysis is `state-analysis` in `data`
+directory.
 
-### Women Domestic Violence
-- [Mean disposition days for domestic violence cases per state](https://public.flourish.studio/visualisation/12434916/)
-- [Case Pendency rate for domestic violence cases per state](https://public.flourish.studio/visualisation/12435177/)
-- [Domestic violence cases per 1000000 women - state data map](https://public.flourish.studio/visualisation/12436114/)
-- [Domestic violence cases per 1000000 women - state ranking](https://www.datawrapper.de/_/DLAPl/)
+- Delhi Analysis : In this analysis, I look at all the districts in Delhi
+and plot the trends over the years for a set of attributes. The folder for
+this analysis is `delhi-analysis` in `data` directory.
 
-### Misc
-- [case pendency rate vs mean disposition days](https://www.datawrapper.de/_/DZg2B/)
+## Classification
+I have done the following two classifications and both of them can be found
+in `classifier` folder in the `data` directory.
 
-#### Best Fit PDF
-- [Best Fit Probability Density Function For Disposition Days (2018)](https://imgur.com/a/33VYQc2) <br>
-Here, I have looked at all the solved cases of 2018 and plotted a histogram of
-the difference between the decision date and the filing date. After that
-I found the best fit probability density function for that histogram.
-Using the best fit pdf, we can answer questions such as what is the
-approximate probability that a case will be solved between date `A` and 
-date `B`.
+- Classifying cases as `acquited` or `convicted`.

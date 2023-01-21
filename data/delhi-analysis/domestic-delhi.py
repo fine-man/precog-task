@@ -138,8 +138,8 @@ def plot(state_code=state_code, column_name=column_name, only_filed_cases=0):
     #plt.savefig(save_filepath)
     #print(f"Graph has been saved to {save_filepath}")
 
-    #plt.show()
+    plt.show()
     
-#df = combine()
-#group_by_year(state_code, start_year, end_year, only_filed_cases)
+df = combine()
+group_by_year(state_code, start_year, end_year, only_filed_cases)
 plot(state_code, column_name, only_filed_cases)

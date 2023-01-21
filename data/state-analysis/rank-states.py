@@ -7,7 +7,7 @@ import datetime as dt
 start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
-column_name = "cases_per_judge"
+column_name = "mean_disposition_days"
 
 def judges_per_state(start_year=2010, end_year=2018):
     # read the judges_clean.csv file
@@ -183,15 +183,13 @@ def data_map(column_name="mean_disposition_days"):
 # process the data for each year separately
 years = [year for year in range(start_year, end_year + 1)]
 
-"""
 for year in years:
     process(year)
-"""
 
 # merge the data for all the years
-#judges_per_state()
-#merge(start_year, end_year)
-#merge_with_judges(start_year, end_year)
+judges_per_state()
+merge(start_year, end_year)
+merge_with_judges(start_year, end_year)
 
 # creating the datamap csv files
 data_map(column_name)

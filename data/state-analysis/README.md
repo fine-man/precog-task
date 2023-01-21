@@ -1,5 +1,11 @@
 # Ranking Judicial System of Different States
 
+## Run Instructions
+```
+python rank-states.py
+```
+The csv file for the resulting data will be in `csv-files` folder
+
 ## Link to visualizations
 
 ### State Rankings

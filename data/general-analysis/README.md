@@ -1,5 +1,11 @@
 # General Analysis
 
+## Run Instructions
+```
+python analysis.py
+```
+The csv for the final data will be saved in `csv-files` folder
+
 ## Link to all visualizations
 
 ### Correlations

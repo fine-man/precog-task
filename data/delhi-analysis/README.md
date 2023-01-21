@@ -1,5 +1,14 @@
 # A General Report of Delhi
 
+## Run Instructions
+```
+python delhi-analysis.py
+python domestic-delhi.py
+python plot-pdf.py
+```
+The csv files of the resulting data will be saved in `csv-files` folder and the
+resulting graphs will be saved in `images` folder.
+
 ## Motivation behind this report
 The purpose of this report is to provide insights that can be used by local 
 police and judiciary to study case trends and allocate resources in a specific 

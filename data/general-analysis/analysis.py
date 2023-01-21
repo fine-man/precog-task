@@ -8,7 +8,7 @@ start_year = 2010
 end_year = 2018
 disposed_after_end_year=0
 group_list = ['year', 'state_code', 'dist_code']
-column_list = ['cases_per_judge']
+column_list = ['mean_disposition_days']
 
 def get_group_type(group_list):
     if len(group_list) == 1:
@@ -229,4 +229,4 @@ for year in years:
 count_judges(start_year, end_year, groupby=group_list[1:])
 merge(start_year, end_year, groupby=group_list[1:])
 merge_with_judges(start_year, end_year, groupby=group_list[1:])
-#data_map(merged_filepath, column_list, merge_on=group_list[1:])
+data_map(merged_filepath, column_list, merge_on=group_list[1:])

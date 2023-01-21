@@ -49,7 +49,6 @@ def transform(cases_df):
 
     # make 3 new columns for each date column
     # make a bail column
-    # turn judges into onehotencoding
     # remove all na values
     
     cases = cases_df.copy(deep=True)
