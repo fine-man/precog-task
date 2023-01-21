@@ -1,0 +1,736 @@
+district_name,Unique-ID,Name
+Adilabad,664,Adilabad
+Agar,696,Agar
+Agra,626,Agra
+Ahmedabad,89,Ahmadabad
+Ahmednagar,449,Ahmadnagar
+Aizawl,277,Aizawl
+Ajmer,532,Ajmer
+Akola,457,Akola
+Alappuzha,360,Alappuzha
+Aligarh,569,Aligarh
+Alipurduar,715,Alipurduar
+Alirajpur,39,Alirajpur
+Allahabad,636,Allahabad
+Almora,347,Almora
+Alwar,648,Alwar
+Ambala,217,Ambala
+Ambedkar Nagar,595,Ambedkar Nagar
+Amethi,620,Amethi
+Amravati,467,Amravati
+Amreli,99,Amreli
+Amritsar,404,Amritsar
+Anand,97,Anand
+Ananthapur,132,Anantapur
+Anantnag,64,Anantnag
+Anjaw,232,Anjaw
+Anugul,486,Anugul
+Anuppur,48,Anuppur
+Araria,168,Araria
+Aravalli at Modasa,93,Aravali
+Ariyalur,540,Ariyalur
+Arwal,159,Arwal
+Ashoknagr,1,Ashoknagar
+Auraiya,600,Auraiya
+Aurangabad,166,Aurangabad
+Aurangabad,471,Aurangabad
+Azamgarh,593,Azamgarh
+Budgam,78,Badgam
+BAGALKOT,437,Bagalkot
+Bageshwar,354,Bageshwar
+Baghpat,572,Baghpat
+Bahraich,563,Bahraich
+Baksa,253,Baksa
+Balaghat,13,Balaghat
+Balangir,513,Balangir
+Balasore,496,Baleshwar
+Ballia,596,Ballia
+Balod,336,Balod
+Balodabazar,335,Baloda Bazar
+Balrampur,328,Balrampur
+Balrampur,579,Balrampur
+Banaskanth at Palanpur,95,Banas Kantha
+Banda,639,Banda
+Bandipora,82,Bandipore
+BENGALURU,446,Bangalore
+BENGALURU RURAL,442,Bangalore Rural
+Banka,165,Banka
+Bankura,391,Bankura
+Banswara,652,Banswara
+Barabanki,610,Bara Banki
+Baramulla,65,Baramula
+Baran,649,Baran
+Purba Bardhaman,390,Barddhaman
+Bareilly,575,Bareilly
+Bargarh,490,Bargarh
+Balotra Barmer,519,Barmer
+Barnala,415,Barnala
+Barpeta,259,Barpeta
+Barwani,14,Barwani
+Bastar,319,Bastar
+Basti,590,Basti
+Bathinda,407,Bathinda
+BOTAD,91,Batod
+Boudh,504,Baudh
+Begusarai,194,Begusarai
+BELAGAVI,444,Belgaum
+BALLARI,440,Bellary
+Bemetara,318,Bemetra
+Betul,4,Betul
+Bhadradri,655,Bhadradri
+Bhadrak,509,Bhadrak
+Bhagalpur,160,Bhagalpur
+Bhandara,476,Bhandara
+Bharatpur,533,Bharatpur
+Bharuch,106,Bharuch
+Bhavnagar,88,Bhavnagar
+Bhilwara,525,Bhilwara
+Bhind,29,Bhind
+Bhiwani,203,Bhiwani
+Bhojpur,183,Bhojpur
+Bhopal,41,Bhopal
+Beed,477,Bid
+BIDAR,432,Bidar
+Bijapur,333,Bijapur
+VIJAYAPURA,428,Bijapur
+Bijnor,571,Bijnor
+Bikaner,523,Bikaner
+Bilaspur,58,Bilaspur
+Bilaspur,321,Bilaspur
+Birbhum,389,Birbhum
+Bishnupur,282,Bishnupur
+Biswanath,691,Biswanath
+Bokaro,152,Bokaro
+Bongaigaon,252,Bongaigaon
+Budaun,561,Budaun
+Bulandshahr,570,Bulandshahr
+Buldhana,472,Buldana
+Bundi,527,Bundi
+Burhanpur,47,Burhanpur
+Buxar,179,Buxar
+Cachar,255,Cachar
+Central,713,Central
+CHAMRAJNAGAR,433,Chamarajanagar
+Chamba,56,Chamba
+Chamoli,356,Chamoli
+Champawat,348,Champawat
+Champhai,275,Champhai
+Chandauli,637,Chandauli
+Chandel,279,Chandel
+Chandigarh,218,Chandigarh
+Chandrapur,456,Chandrapur
+Changlang,227,Changlang
+Charaideo,689,Charaideo
+Chatra,142,Chatra
+Chengalputtu,732,Chengalputtu
+Chennai,630,Chennai
+Chhatarpur,16,Chhatarpur
+Chhindwara,3,Chhindwara
+Chhota Udepur,90,Chhota Udaipur
+CHIKKABALLAPUR,420,Chikkaballapura
+CHIKKAMAGALURU,422,Chikmagalur
+Chirang,247,Chirang
+CHITRADURGA,423,Chitradurga
+Chitrakoot,589,Chitrakoot
+Chittorgarh,535,Chittaurgarh
+Chittoor,127,Chittoor
+Churachandpur,283,Churachandpur
+Churu,522,Churu
+Coimbatore,645,Coimbatore
+Cuddalore,627,Cuddalore
+Cuttack,501,Cuttack
+Silvassa,121,Dadra & Nagar Haveli
+Dantewada,326,Dakshin Bastar Dantewada
+South Dinajpur,378,Dakshin Dinajpur
+DAKSHINA KANNADA,425,Dakshina Kannada
+Daman,86,Daman
+Damoh,35,Damoh
+Darbhanga,184,Darbhanga
+Darjeeling,383,Darjiling
+Darrang,256,Darrang
+DATA NOT AVAILABLE,63,DATA NOT AVAILABLE
+Datia,46,Datia
+Dausa,538,Dausa
+DAVANGERE,430,Davanagere
+Deogarh,487,Debagarh
+Dehradun,346,Dehradun
+Deoghar,153,Deoghar
+Deoria,615,Deoria
+Devbhumi Dwarka at Khambhaliya,109,Devbhumi Dwarka
+Dewas,24,Dewas
+Dhalai Tripura,302,Dhalai
+Dhamtari,338,Dhamtari
+Dhanbad,150,Dhanbad
+Dhar,36,Dhar
+Dharmapuri,557,Dharmapuri
+DHARWAD,431,Dharwad
+Dholpur,650,Dhaulpur
+Dhemaji,248,Dhemaji
+Dhenkanal,499,Dhenkanal
+Dhubri,242,Dhubri
+Dhule,461,Dhule
+Dibang Valley,234,Dibang Valley
+Dibrugarh,258,Dibrugarh
+Dima Hasao,264,Dima Hasao
+Dimapur,297,Dimapur
+Dindigul,555,Dindigul
+Dindori,12,Dindori
+Diu,87,Diu
+Doda,73,Doda
+Dahod,100,Dohad
+Dumka,151,Dumka
+Dungarpur,534,Dungarpur
+Durg,331,Durg
+East,706,East
+Gangtok,376,East District
+East Garo Hills,316,East Garo Hills
+East Godavari,124,East Godavari
+East Jaintia Hills,314,East Jaintia Hills
+East Kameng,230,East Kameng
+East Khasi Hills,309,East Khasi Hills
+East Siang,687,East Siang
+Ernakulam,361,Ernakulam
+Erode,644,Erode
+Etah,577,Etah
+Etawah,625,Etawah
+Faizabad,594,Faizabad
+Faridabad,212,Faridabad
+Faridkot,405,Faridkot
+Farrukhabad,582,Farrukhabad
+Fatehabad,211,Fatehabad
+Fatehgarh Sahib,401,Fatehgarh Sahib
+Fatehpur,617,Fatehpur
+Fazilka,414,Fazilka
+Firozabad,587,Firozabad
+Ferozepur,413,Firozpur
+GADAG,435,Gadag
+Gadchiroli,473,Gadchiroli
+Gajapati,498,Gajapati
+Ganderbal,76,Ganderbal
+GANDHINAGAR,116,Gandhinagar
+Ganganagar,520,Ganganagar
+Ganjam,507,Ganjam
+Garhwa,156,Garhwa
+Pauri Garhwal,350,Garhwal
+Gariaband,322,Gariaband
+Gaurella Pendra Marwahi,736,Gaurella Pendra Marwahi
+Gautam Buddha Nagar,623,Gautam Buddha Nagar
+Gaya,164,Gaya
+Ghaziabad,621,Ghaziabad
+Ghazipur,642,Ghazipur
+Gir Somnath at Veraval,107,Gir Somnath
+Giridih,145,Giridih
+Goalpara,240,Goalpara
+Godda,148,Godda
+Golaghat,262,Golaghat
+Gomati District,305,Gomati
+Gonda,607,Gonda
+Gondia,466,Gondiya
+Gopalganj,175,Gopalganj
+Gorakhpur,591,Gorakhpur
+KALABURAGI,434,Gulbarga
+Gumla,154,Gumla
+Guna,23,Guna
+Guntur,130,Guntur
+Gurdaspur,397,Gurdaspur
+Gurugram,197,Gurgaon
+Gwalior,34,Gwalior
+Hailakandi,246,Hailakandi
+Hamirpur,62,Hamirpur
+Hamirpur,606,Hamirpur
+Hanumangarh,517,Hanumangarh
+Howrah,387,Haora
+Hapur,564,Hapur
+Harda,19,Harda
+Hardoi,578,Hardoi
+Haridwar,351,Hardwar
+HASSAN,438,Hassan
+HAVERI,424,Haveri
+Hazaribagh,141,Hazaribagh
+Hingoli,464,Hingoli
+Hisar,214,Hisar
+Hnahthial,727,Hnahthial
+Hojai,692,Hojai
+Hoshangabad,5,Hoshangabad
+Hoshiarpur,411,Hoshiarpur
+Hooghly,395,Hugli
+Hyderabad,656,Hydrabad
+Idukki,364,Idukki
+Imphal East,285,Imphal East
+Imphal West,287,Imphal West
+Indore,17,Indore
+Jabalpur,7,Jabalpur
+Jagatsinghpur,491,Jagatsinghapur
+Jagtial,668,Jagtial
+Jaipur Metro,528,Jaipur
+Jaiselmer,515,Jaisalmer
+Jajpur,502,Jajapur
+Jalandhar,408,Jalandhar
+Jalaun,603,Jalaun
+Jalgaon,474,Jalgaon
+Jalna,478,Jalna
+Jalore,537,Jalor
+Jalpaiguri,384,Jalpaiguri
+Jammu,70,Jammu
+Jamnagar,112,Jamnagar
+Jamtara,135,Jamtara
+Jamui,193,Jamui
+Jangaon,654,Jangaon
+Janjgir,343,Janjgir-Champa
+Jashpur,341,Jashpur
+Jaunpur,609,Jaunpur
+Jayashankar,669,Jayashankar
+Jehanabad,173,Jehanabad
+Jhabua,30,Jhabua
+Jhajjar,202,Jhajjar
+Jhalawar,647,Jhalawar
+Jhansi,638,Jhansi
+Jhargram,716,Jhargram
+Jharsuguda,511,Jharsuguda
+Jhunjhunu,514,Jhunjhunun
+Jind,208,Jind
+Jiribam,703,Jiribam
+Jodhpur District,521,Jodhpur
+Jogulamba,682,Jogulamba
+Jorhat,266,Jorhat
+Junagadh,108,Junagadh
+Jyotiba Phule Nagar,586,Jyotiba Phule Nagar
+Kawardha,323,Kabeerdham
+kachchh at Bhuj,102,Kachchh
+Kadapa,134,Kadapa(YSR)
+Kaimur at Bhabhua,186,Kaimur (Bhabua)
+Kaithal,204,Kaithal
+Kakching,702,Kakching
+Kalahandi,503,Kalahandi
+kalimpong,718,Kalimpong
+Kallakurichi,733,Kallakurichi
+Kamareddy,667,Kamareddy
+Kamjong,700,Kamjong
+Kamle,723,Kamle
+Kamrup,257,Kamrup
+Kamrup Metro,263,Kamrup Metropolitan
+Kancheepuram,633,Kancheepuram
+Kandhamal,492,Kandhamal
+Kangpokpi,286,Kangpokpi
+Kangra,59,Kangra
+Kannauj,583,Kannauj
+Kanniyakumari,634,Kanniyakumari
+Kannur,358,Kannur
+Kanpur Dehat,608,Kanpur Dehat
+Kanpur Nagar,597,Kanpur Nagar
+Kanshi Ram Nagar,562,Kanshiram Nagar
+Kapurthala,400,Kapurthala
+Karaikal,268,Karaikal
+Karauli,653,Karauli
+Karbi Anglong East,250,Karbi Anglong East
+Karbi Anglong,693,Karbi Anglong West
+Kargil,84,Kargil
+Karimganj,244,Karimganj
+Karimnagar,658,Karimnagar
+Karnal,206,Karnal
+Karur,556,Karur
+Kasaragod,363,Kasaragod
+Kathua,83,Kathua
+Katihar,196,Katihar
+Katni,37,Katni
+Kaushambi,602,Kaushambi
+Kendrapada,505,Kendrapara
+Keonjhar,506,Kendujhar
+Khagaria,188,Khagaria
+Khammam,674,Khammam
+Khandwa,32,Khandwa (East Nimar)
+Mandleshwar,26,Khargone (West Nimar)
+Khawzawl,729,Khawzawl
+Kheda at Nadiad,120,Kheda
+Kheri,573,Kheri
+Khurda,493,Khordha
+Khowai Tripura,299,Khowai
+KHUNTI,139,Khunti
+Kinnaur,54,Kinnaur
+Kiphire,296,Kiphire
+Kishanganj,163,Kishanganj
+Kishtwar,85,Kishtwar
+Coochbehar,393,Koch Bihar
+KODAGU,441,Kodagu
+Koderma,144,Kodarma
+Kohima,293,Kohima
+Kokrajhar,265,Kokrajhar
+KOLAR,427,Kolar
+Kolasib,272,Kolasib
+Kolhapur,455,Kolhapur
+Calcutta,380,Kolkata
+Kollam,362,Kollam
+Komaram Bheem,665,Komaram Bheem
+Kondagaon,329,Kondagaon
+KOPPAL,445,Koppal
+Koraput,488,Koraput
+Korba,339,Korba
+Koriya,337,Koriya
+Kota,529,Kota
+Kottayam,366,Kottayam
+Kozhikode,365,Kozhikode
+Kra Daadi,688,Kra Daadi
+Krishna,123,Krishna
+Krishnagiri,643,Krishnagiri
+Kulgam,66,Kulgam
+Kullu,55,Kullu
+Kupwara,80,Kupwara
+Kurnool,129,Kurnool
+Kurukshetra,207,Kurukshetra
+Kurung Kumey,235,Kurung Kumey
+Kushinagar,614,Kushinagar
+Lahul & Spiti,60,Lahul & Spiti
+Lakhimpur,251,Lakhimpur
+Lakhisarai,192,Lakhisarai
+Lakshadweep,372,Lakshadweep
+Lalitpur,641,Lalitpur
+Latehar,138,Latehar
+Latur,450,Latur
+Lawngtlai,273,Lawngtlai
+Leh,71,Leh(Ladakh)
+Leparada,725,Leparada
+Lohardaga,146,Lohardaga
+Lohit,224,Lohit
+Longding,228,Longding
+Longleng,291,Longleng
+Lower Dibang Valley,237,Lower Dibang Valley
+Lower Siang,726,Lower Siang
+Lower Subansiri,229,Lower Subansiri
+Lucknow,592,Lucknow
+Ludhiana,406,Ludhiana
+Lunglei,271,Lunglei
+Madhepura,162,Madhepura
+Madhubani,180,Madhubani
+Madurai,553,Madurai
+Mahabubabad,675,Mahabubabad
+Mahabubnagar,684,Mahabubnagar
+Hathras,580,Mahamaya Nagar
+Mahasamund,342,Mahasamund
+Mahe,270,Mahe
+Narnaul,210,Mahendragarh
+Mahesana,104,Mahesana
+Mahisagar at Lunawada,117,Mahisagar
+Mahoba,611,Mahoba
+Maharajganj,612,Mahrajganj
+Mainpuri,585,Mainpuri
+Majuli,690,Majuli
+Malappuram,370,Malappuram
+Malda,381,Maldah
+Malkangiri,495,Malkangiri
+Mamit,278,Mamit
+Mancherial,657,Mancherial
+Mandi,61,Mandi
+Mandla,43,Mandla
+Mandsaur,25,Mandsaur
+MANDYA,418,Mandya
+Mansa,403,Mansa
+Mathura,576,Mathura
+Mau,618,Mau
+Mayiladuthurai,734,Mayiladuthurai
+Mayurbhanj,494,Mayurbhanj
+Medak,660,Medak
+Medchal,680,Medchal
+Meerut,568,Meerut
+Nuh,201,Mewat
+Mirzapur,613,Mirzapur
+Moga,410,Moga
+Mokokchung,290,Mokokchung
+Mon,288,Mon
+Moradabad,559,Moradabad
+MORBI,118,Morbi
+Morena,28,Morena
+Morigaon,249,Morigaon
+Sri Muktsar Sahib,409,Muktsar
+Mulugu,720,Mulugu
+Mumbai City Civil Court,481,Mumbai
+Mumbai Suburban,482,Mumbai Suburban
+Mungeli,320,Mungeli
+Munger,189,Munger
+Murshidabad,379,Murshidabad
+Muzaffarnagar,622,Muzaffarnagar
+Muzaffarpur,170,Muzaffarpur
+MYSURU,419,Mysore
+Nabarangpur,489,Nabarangapur
+Nadia,377,Nadia
+Nagaon,254,Nagaon
+Nagapattinam,631,Nagapattinam
+Nagarkurnool,663,Nagarkurnool
+Merta (Nagaur),518,Nagaur
+Nagpur,483,Nagpur
+Nainital,345,Nainital
+Nalanda,195,Nalanda
+Nalbari,241,Nalbari
+Nalgonda,662,Nalgonda
+Namakkal,558,Namakkal
+Namsai,686,Namsai
+Nanded,460,Nanded
+Nandurbar,468,Nandurbar
+Narayanpet,719,Narayanpet
+Narayanpur,330,Narayanpur
+Narmada,98,Narmada
+Narsinghpur,8,Narsimhapur
+Nashik,452,Nashik
+Navsari,110,Navsari
+Nawada,167,Nawada
+Nayagarh,500,Nayagarh
+Neemuch,21,Neemuch
+New Delhi,705,New Delhi
+Nicobars,223,Nicobars
+Nirmal,666,Nirmal
+Niwari,721,Niwari
+Nizamabad,659,Nizamabad
+Noney,698,Noney
+North,710,North
+North & Middle Andaman,221,North & Middle Andaman
+Mangan,373,North District
+North East,711,North East
+North Garo Hills,317,North Garo Hills
+North Goa,219,North Goa
+North Tripura,304,North Tripura
+North Twenty Four Parganas,388,North Twenty Four Parganas
+North West,704,North West
+Nuapada,510,Nuapada
+Osmanabad,453,Osmanabad
+Pakke Kessang,722,Pakke Kessang
+Pakur,158,Pakur
+Palakkad,368,Palakkad
+Daltonganj,149,Palamu
+Palghar,480,Palghar
+Pali,530,Pali
+Palwal,199,Palwal
+Panchmahal at Godhra,119,Panch Mahals
+Panchkula,200,Panchkula
+Panipat,209,Panipat
+Panna,9,Panna
+Papum Pare,239,Papum Pare
+Parbhani,458,Parbhani
+Paschim Bardhaman,717,Paschim Barddhaman
+Paschim Medinpur,394,Paschim Medinipur
+Bettiah,169,Pashchim Champaran
+West Singhbhum at Chaibasa,140,Pashchimi Singhbhum
+Patan,105,Patan
+Pathanamthitta,359,Pathanamthitta
+Pathankot,396,Pathankot
+Patiala,398,Patiala
+Patna,182,Patna
+Peddapalli,670,Peddapalli
+Perambalur,554,Perambalur
+Peren,298,Peren
+Phek,292,Phek
+Pherzawl,697,Pherzawl
+Pilibhit,584,Pilibhit
+Pithoragarh,355,Pithoragarh
+Porbandar,114,Porbandar
+Prakasham,122,Prakasam
+Pratapgarh,524,Pratapgarh
+Pratapgarh,605,Pratapgarh
+Puducherry,269,Puducherry
+Pudukkottai,628,Pudukkottai
+Pulwama,74,Pulwama
+Poonch,79,Punch
+Pune,465,Pune
+Motihari,191,Purba Champaran
+Purba Medinipur,386,Purba Medinipur
+East Singhbhum at Jamshedpur,143,Purbi Singhbhum
+Puri,485,Puri
+Purnea,161,Purnia
+Purulia,392,Puruliya
+Raebareli,619,Rae Bareli
+RAICHUR,426,Raichur
+Raigarh,340,Raigarh
+Raigarh,475,Raigarh
+Raipur,334,Raipur
+Raisen,2,Raisen
+Rajanna Sircilla,671,Rajanna Sircilla
+Rajgarh,42,Rajgarh
+RAJKOT,101,Rajkot
+Rajnandgaon,344,Rajnandgaon
+Rajouri,69,Rajouri
+Rajsamand,531,Rajsamand
+RAMANAGARAM,447,Ramanagara
+Ramanathapuram,544,Ramanathapuram
+Ramban,75,Ramban
+RAMGARH,155,Ramgarh
+Rampur,574,Rampur
+Ranchi,157,Ranchi
+Rangareddy,661,Rangareddy
+Ranipet,731,Ranipet
+Ratlam,18,Ratlam
+Ratnagiri,469,Ratnagiri
+Rayagada,512,Rayagada
+Reasi,68,Reasi
+Rewa,11,Rewa
+Rewari,215,Rewari
+Ri Bhoi,308,Ribhoi
+Rohtak,216,Rohtak
+Rohtas Sasaram,187,Rohtas
+Rudraprayag,352,Rudraprayag
+Rupnagar,412,Rupnagar
+Sabarkantha at Himmatnagar,94,Sabar Kantha
+Sagar,20,Sagar
+Saharanpur,624,Saharanpur
+Saharsa,174,Saharsa
+Sahibganj,147,Sahibganj
+Mohali,416,Sahibzada Ajit Singh Nagar
+Saiha,274,Saiha
+Saitual,728,Saitual
+Salem,552,Salem
+Samastipur,185,Samastipur
+Samba,81,Samba
+Sambalpur,497,Sambalpur
+Sambhal at Chandausi,560,Sambhal
+Shamli,566,Samli
+Sangareddy,672,Sangareddy
+Sangli,463,Sangli
+Sangrur,402,Sangrur
+Santkabir Nagar,601,Sant Kabir Nagar
+Bhadohi SR Nagar,598,Sant Ravidas Nagar (Bhadohi)
+Seraikella,136,Saraikela-Kharsawan
+Saran at Chapra,171,Saran
+Satara,462,Satara
+Satna,15,Satna
+Sawai Madhopur,651,Sawai Madhopur
+Sehore,6,Sehore
+Senapati,701,Senapati
+Seoni,31,Seoni
+Serchhip,276,Serchhip
+Shahdara,714,Shahdara
+Shahdol,49,Shahdol
+SBS Nagar,417,Shahid Bhagat Singh Nagar
+Shahjahanpur,581,Shahjahanpur
+Shajapur,44,Shajapur
+Sheikhpura,172,Sheikhpura
+Sheohar,178,Sheohar
+Sheopur,27,Sheopur
+Shi Yomi,724,Shi Yomi
+Shimla,57,Shimla
+SHIVAMOGGA,439,Shimoga
+Shivpuri,45,Shivpuri
+Shravasti,567,Shrawasti
+Shopian,67,Shupiyan
+Siang,233,Siang
+Siddharthnagar,599,Siddharthnagar
+Siddipet,673,Siddipet
+Sidhi,38,Sidhi
+Sikar,516,Sikar
+Simdega,137,Simdega
+Sindhudurg,454,Sindhudurg
+Singrauli,40,Singrauli
+Sipahijula,300,Sipahijula
+Sirmaur,53,Sirmaur
+Sirohi,539,Sirohi
+Sirsa,213,Sirsa
+Sitamarhi,190,Sitamarhi
+Sitapur,565,Sitapur
+Sivagangai,541,Sivaganga
+Sivasagar,243,Sivasagar
+Siwan,177,Siwan
+Solan,52,Solan
+Solapur,451,Solapur
+Sonbhadra,640,Sonbhadra
+Sonepat,205,Sonipat
+Sonitpur,260,Sonitpur
+South,709,South
+South Andaman,222,South Andaman
+Namchi,374,South District
+South East,712,South East
+South Garo Hills,307,South Garo Hills
+South Goa,220,South Goa
+South Salmara-Mankachar,694,South Salmara-Mankachar
+SouthTripura,306,South Tripura
+South Twenty Four Parganas,382,South Twenty Four Parganas
+South West,707,South West
+South West Garo Hills,313,South West Garo Hills
+South West Khasi Hills,311,South West Khasi Hills
+Nellore,126,Sri Potti Sriramulu Nellore
+Srikakulam,128,Srikakulam
+Srinagar,72,Srinagar
+Sonepur,484,Subarnapur
+Sukma,324,Sukma
+Sultanpur,588,Sultanpur
+Sundargarh,508,Sundargarh
+Supaul,181,Supaul
+Surajpur,332,Surajpur
+SURAT,111,Surat
+Surendranagar,96,Surendranagar
+Surguja,327,Surguja
+Suryapet,678,Suryapet
+Tamenglong,280,Tamenglong
+Tapi,113,Tapi
+Tarn Taran,399,Tarn Taran
+Tawang,238,Tawang
+Tehri Garhwal,353,Tehri Garhwal
+Tengnoupal,699,Tengnoupal
+Tenkasi,735,Tenkasi
+Thane,479,Thane
+Thanjavur,542,Thanjavur
+The Dangs,103,The Dangs
+The Nilgiris,646,The Nilgiris
+Theni,551,Theni
+Tiruvallur,548,Thiruvallur
+Thiruvananthapuram,369,Thiruvananthapuram
+Tiruvarur,547,Thiruvarur
+Thoothukudi,635,Thoothukkudi
+Thoubal,284,Thoubal
+Thrissur,367,Thrissur
+Tikamgarh,22,Tikamgarh
+Tinsukia,245,Tinsukia
+Tirap,685,Tirap
+Tiruchirappalli,549,Tiruchirappalli
+Tirunelveli,545,Tirunelveli
+Tirupathur,730,Tirupathur
+Tiruppur,550,Tiruppur
+Tiruvannamalai,543,Tiruvannamalai
+Tonk,526,Tonk
+Tuensang,289,Tuensang
+TUMAKURU,443,Tumkur
+Udaipur,536,Udaipur
+Udalguri,261,Udalguri
+Udham Singh Nagar,357,Udham Singh Nagar
+Udhampur,77,Udhampur
+UDUPI,436,Udupi
+Ujjain,10,Ujjain
+Ukhrul,281,Ukhrul
+Umaria,33,Umaria
+Una,51,Una
+Unnao,616,Unnao
+Unakoti Tripura,303,Unokoti
+Upper Siang,231,Upper Siang
+Upper Subansiri,226,Upper Subansiri
+Kanker,325,Uttar Bastar Kanker
+North Dinajpur,385,Uttar Dinajpur
+UTTARA KANNADA,429,Uttara Kannada
+Uttarkashi,349,Uttarkashi
+Vadodara,92,Vadodara
+Vaishali,176,Vaishali
+Valsad,115,Valsad
+Varanasi,604,Varanasi
+Vellore,629,Vellore
+Vidisha,50,Vidisha
+Vikarabad,681,Vikarabad
+Viluppuram,632,Viluppuram
+Virudhunagar,546,Virudhunagar
+Visakapatnam,125,Visakhapatnam
+Vizianagaram,131,Vizianagaram
+Wanaparthy,683,Wanaparthy
+Warangal,676,Warangal (R)
+Warangal (U),677,Warangal (U)
+Wardha,470,Wardha
+Washim,448,Washim
+Wayanad,371,Wayanad
+West,708,West
+Gyalshing,375,West District
+West Garo Hills,312,West Garo Hills
+West Godavari,133,West Godavari
+West Jaintia Hills,315,West Jaintia Hills
+West Kameng,236,West Kameng
+West Khasi Hills,310,West Khasi Hills
+West Siang,225,West Siang
+West Tripura,301,West Tripura
+Wokha,294,Wokha
+Yadadri Bhongiri,679,Yadadri Bhongiri
+YADGIR,421,Yadgir
+Yamunanagar,198,Yamunanagar
+Yanam,267,Yanam
+Yavatmal,459,Yavatmal
+Zunheboto,295,Zunheboto

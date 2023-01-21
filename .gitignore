@@ -5,3 +5,5 @@ data/acts_sections.csv
 data/tar-gz-files
 data/keys/
 data/cases/
+data/**/cases_agg/
+data/**/temps/
