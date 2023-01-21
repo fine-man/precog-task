@@ -1,0 +1,30 @@
+loaded file ../keys/disp_name_key.csv
+cases_2010.csv has been loaded
+cases_2011.csv has been loaded
+cases_2012.csv has been loaded
+cases_2013.csv has been loaded
+cases_2014.csv has been loaded
+cases_2015.csv has been loaded
+cases_2016.csv has been loaded
+cases_2017.csv has been loaded
+cases_2018.csv has been loaded
+filtered all the bail cases from all the years
+cleaned and transformed the data successfully
+dataset splitted
+training the model...
+model trained
+trained model has been saved to bail.pkl
+Accuracy of model = 0.9999719069558377
+Confusition Matrix: 
+[[51953     0]
+ [    0 90427]]
+Classification Report
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     51953
+           1       1.00      1.00      1.00     90427
+
+    accuracy                           1.00    142380
+   macro avg       1.00      1.00      1.00    142380
+weighted avg       1.00      1.00      1.00    142380
+
