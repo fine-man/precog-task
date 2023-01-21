@@ -4,6 +4,8 @@ The feature space for both the classifiers are the meta-data of the case like
 `state_code, dist_code, court_no, date_of_filing, date_first_list,
 date_next_list, date_last_list, date_of_decision`
 
+I am using a Random Forrest Classifier for the classification task
+
 ## Bail Classifier
 
 ### Run Instructions
