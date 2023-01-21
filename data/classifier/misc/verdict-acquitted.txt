@@ -1,27 +1,13 @@
-loaded file ../keys/disp_name_key.csv
-cases_2018.csv has been loaded
-filtered all the acquitted cases from all the years
-(623923, 20)
-date_first_list date_of_filing (584739, 20)
-date_last_list date_first_list (580461, 20)
-date_next_list date_last_list (580409, 20)
-date_of_decision date_next_list (580309, 20)
-cleaned and transformed the data successfully
-dataset splitted
-training the model...
-model trained
-trained model has been saved to acquitted.pkl
-Accuracy of model = 1.0
-Confusition Matrix: 
-[[300109      0]
- [     0 160182]]
-Classification Report
+Accuracy of model = 0.9404291189071285
+Confusion Matrix: 
+[[281393  18716]
+ [ 10310 149872]]
+Classification Report: 
               precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00    300109
-           1       1.00      1.00      1.00    160182
+           0       0.96      0.94      0.95    300109
+           1       0.89      0.94      0.91    160182
 
-    accuracy                           1.00    460291
-   macro avg       1.00      1.00      1.00    460291
-weighted avg       1.00      1.00      1.00    460291
-
+    accuracy                           0.94    460291
+   macro avg       0.93      0.94      0.93    460291
+weighted avg       0.94      0.94      0.94    460291
