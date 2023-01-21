@@ -96,7 +96,7 @@ def transform(cases_df):
         cases[f"{name}_day"] = cases[column_name].dt.day
 
     # removing unwanted columns
-    cases.drop(['judge_position', 'disp_name_s'] + date_columns, axis=1, inplace=True)
+    cases.drop(['judge_position', 'disp_name', 'disp_name_s'] + date_columns, axis=1, inplace=True)
     return cases
 
 def filter_cases(year, disp=disp_df):
