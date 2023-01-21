@@ -53,7 +53,7 @@ cases assigned to a judge and the average number of cases that are pending.
 
 ![Cases vs Pendency](images/cases-vs-pendency.png)
 
-### Conclusion
+## Conclusion
 From the above analysis, we can conclude that just by increasing the number
 of judges (thereby decreasing the average number of cases per judge) has no
 correlation/affect on the efficiency (i.e - case pendency rate and mean
