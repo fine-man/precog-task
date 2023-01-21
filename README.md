@@ -8,7 +8,7 @@ git clone https://github.com/fine-man/precog-task.git
 cd precog-task
 ```
 Now download the zip file from [here](https://www.dropbox.com/sh/hkcde3z2l1h9mq1/AAB2U1dYf6pR7qij1tQ5y11Fa/csv?dl=0&subfolder_nav_tracking=1)
-and put the `csv.zip` file in `precog-task/data` directory
+and put the `csv.zip` file in `precog-task/data` directory.
 After that cd into the `precog-task/data` directory and run this
 
 ```
