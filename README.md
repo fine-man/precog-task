@@ -1,6 +1,19 @@
 # Precog Programming Task
 
 ## Build Instructions
+First clone the repository
+```
+git clone https://github.com/fine-man/precog-task.git
+
+cd precog-task
+```
+Now download the zip file from [here](https://www.dropbox.com/sh/hkcde3z2l1h9mq1/AAB2U1dYf6pR7qij1tQ5y11Fa/csv?dl=0&subfolder_nav_tracking=1)
+and put the `csv.zip` file in `precog-task/data` directory
+After that cd into the `precog-task/data` directory and run this
+
+```
+./build.sh
+```
 
 ## Motivation behind the analysis
 The underlying principle behind all three of my analyses is to identify 
@@ -43,4 +56,5 @@ this analysis is `delhi-analysis` in `data` directory.
 I have done the following two classifications and both of them can be found
 in `classifier` folder in the `data` directory.
 
-- Classifying cases as `acquited` or `convicted`.
+- Classifying cases as `bail granted` or `bail rejected`
+- Classifying cases as `acquited` or `convicted`
